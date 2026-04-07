@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with "sPlan" (http://www.abacom-online.de)/ -->
+<svg version="1.1" baseProfile="full"
+xmlns="http://www.w3.org/2000/svg"
+width="639" height="429">
+<title>1.2</title>
+<defs>
+<style type="text/css">
+<![CDATA[
+polyline {stroke-linecap:round; stroke-linejoin:round}
+polygon {stroke-linecap:round; stroke-linejoin:round}
+path {stroke-linecap:round; stroke-linejoin:round}
+circle {stroke-linecap:round; stroke-linejoin:round}
+]]>
+</style>
+</defs>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 138 83 L 188 83 188 103 138 103 138 83" />
+<polyline points="118.00 93.00 138.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="188.00 93.00 208.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="169.06" y="77.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R1</text>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 218 203 L 268 203 268 223 218 223 218 203" />
+<polyline points="198.00 213.00 218.00 213.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="268.00 213.00 288.00 213.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="260.44" y="197.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R3</text>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 138 323 L 188 323 188 343 138 343 138 323" />
+<polyline points="118.00 333.00 138.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="188.00 333.00 208.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="169.06" y="317.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R2</text>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 408 133 L 428 133 428 183 408 183 408 133" />
+<polyline points="418.00 113.00 418.00 133.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 183.00 418.00 203.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="431.78" y="162.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R4</text>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 408 243 L 428 243 428 293 408 293 408 243" />
+<polyline points="418.00 223.00 418.00 243.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 293.00 418.00 313.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="431.78" y="272.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R5</text>
+<path fill="rgb(255,255,255)" stroke="rgb(0,0,0)" stroke-width="3" style="stroke-linecap:square; stroke-linejoin:miter" d=" M 538 183 L 558 183 558 233 538 233 538 183" />
+<polyline points="548.00 163.00 548.00 183.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="548.00 233.00 548.00 253.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="580.27" y="212.00" font-family ="Arial" font-size ="13pt" font-weight="normal" font-style="italic" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(0.875,1.000)">R6</text>
+<circle cx="294.00" cy="94.00" r="25.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="263.00" y="61.00" font-family ="Arial" font-size ="15pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">E1 r01</text>
+<polyline points="280.00 94.00 311.06 94.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polygon points="297.46 97.60 311.06 94.00 297.46 90.40" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="208.00 93.00 268.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="368.00 93.00 320.50 92.94" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<circle cx="294.00" cy="334.00" r="25.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<text x="263.00" y="301.00" font-family ="Arial" font-size ="15pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">E2 r02</text>
+<polyline points="280.00 334.00 311.06 334.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polygon points="297.46 337.60 311.06 334.00 297.46 330.40" fill="rgb(0,0,0)" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="208.00 333.00 268.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="368.00 333.00 320.50 332.94" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="118.00 333.00 68.00 333.00 68.00 93.00 118.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="198.00 213.00 68.00 213.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="288.00 213.00 418.00 213.00 418.00 203.00 418.00 223.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 333.00 368.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 93.00 368.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 93.00 548.00 93.00 548.00 163.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="548.00 253.00 548.00 333.00 418.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 113.00 418.00 93.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<polyline points="418.00 313.00 418.00 333.00" fill="none" stroke="rgb(0,0,0)" stroke-width="3" />
+<circle cx="418" cy="213" r="6" fill="rgb(0,0,0)" stroke="none" stroke-width="2" />
+<circle cx="68" cy="213" r="6" fill="rgb(0,0,0)" stroke="none" stroke-width="2" />
+<circle cx="418" cy="93" r="6" fill="rgb(0,0,0)" stroke="none" stroke-width="2" />
+<circle cx="418" cy="333" r="6" fill="rgb(0,0,0)" stroke="none" stroke-width="2" />
+<polyline points="138.00 123.00 188.00 123.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="174.40 126.60 188.00 123.00 174.40 119.40" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="153.00" y="149.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I1</text>
+<polyline points="273.00 238.00 223.00 238.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="236.60 234.40 223.00 238.00 236.60 241.60" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="244.00" y="264.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I3</text>
+<polyline points="141.00 358.00 191.00 358.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="177.40 361.60 191.00 358.00 177.40 354.40" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="156.00" y="384.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I2</text>
+<polyline points="443.00 135.00 443.00 185.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="439.40 171.40 443.00 185.00 446.60 171.40" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="451.00" y="163.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I4</text>
+<polyline points="444.00 295.00 444.00 245.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="447.60 258.60 444.00 245.00 440.40 258.60" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="452.00" y="282.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I5</text>
+<polyline points="572.00 185.00 572.00 235.00" fill="none" stroke="rgb(212,65,19)" stroke-width="3" />
+<polygon points="568.40 221.40 572.00 235.00 575.60 221.40" fill="rgb(212,65,19)" stroke="rgb(212,65,19)" stroke-width="3" />
+<text x="580.00" y="213.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(255,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">I6</text>
+<text x="411.00" y="80.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">A</text>
+<text x="410.00" y="363.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">C</text>
+<text x="432.00" y="220.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">B</text>
+<text x="559.00" y="349.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">L</text>
+<text x="559.00" y="97.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">F</text>
+<text x="42.00" y="96.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">E</text>
+<text x="40.00" y="219.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">D</text>
+<text x="44.00" y="343.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,0)" transform=" rotate(0.000) scale(1.000,1.000)">K</text>
+<circle cx="308.00" cy="163.00" r="30.00" fill="none" stroke="rgb(9,75,136)" stroke-width="3" />
+<polyline points="338.00 163.00 338.00 183.00" fill="none" stroke="rgb(10,81,146)" stroke-width="3" />
+<polygon points="334.40 169.40 338.00 183.00 341.60 169.40" fill="rgb(10,81,146)" stroke="rgb(10,81,146)" stroke-width="3" />
+<circle cx="498.00" cy="133.00" r="30.00" fill="none" stroke="rgb(9,75,136)" stroke-width="3" />
+<polyline points="528.00 133.00 528.00 153.00" fill="none" stroke="rgb(10,81,146)" stroke-width="3" />
+<polygon points="524.40 139.40 528.00 153.00 531.60 139.40" fill="rgb(10,81,146)" stroke="rgb(10,81,146)" stroke-width="3" />
+<circle cx="148.00" cy="263.00" r="30.00" fill="none" stroke="rgb(9,75,136)" stroke-width="3" />
+<polyline points="118.00 263.00 118.00 283.00" fill="none" stroke="rgb(10,81,146)" stroke-width="3" />
+<polygon points="114.40 269.40 118.00 283.00 121.60 269.40" fill="rgb(10,81,146)" stroke="rgb(10,81,146)" stroke-width="3" />
+<text x="298.00" y="173.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,255)" transform=" rotate(0.000) scale(1.000,1.000)">I1</text>
+<text x="138.00" y="273.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,255)" transform=" rotate(0.000) scale(1.000,1.000)">I2</text>
+<text x="488.00" y="143.00" font-family ="Arial" font-size ="14pt" font-weight="normal" font-style="normal" fill="rgb(0,0,255)" transform=" rotate(0.000) scale(1.000,1.000)">I3</text>
+</svg>

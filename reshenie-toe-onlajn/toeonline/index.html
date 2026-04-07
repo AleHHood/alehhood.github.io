@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Расчёт электрических цепей онлайн | energoschool</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description"  content="Онлайн программа расчета электрических цепей постоянного тока методом двух узлов" />
+
+
+
+
+
+
+<link rel='stylesheet' id='electrikam-style-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/style.css?ver=6.9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='style-name-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/program/css/style.min.css?ver=6.9.1' type='text/css' media='all' />
+
+
+<link rel="icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<meta name="msapplication-TileImage" content="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-270x270.jpg" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://energoschool.ru/wp-content/uploads/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://energoschool.ru/wp-content/uploads/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://energoschool.ru/wp-content/uploads/favicon/favicon-16x16.png">
+<link rel="manifest" href="https://energoschool.ru/wp-content/uploads/favicon/site.webmanifest">
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106905110', 'ym');
+
+    ym(106905110, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106905110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+    <body>
+
+<header>
+    <div class="container">
+        <div class="header">
+        <nav class="header__nav">
+            <!-- <a class="header__logo" href="https://energoschool.ru">energoschool</a> -->				
+            						<p class="header__logo-block"><a class="header__logo" href="../../" rel="home">energoschool</a></p>
+					            <ul class="header__menu">
+            <li class="menu__item"><a class="menu__link" href="../../toe/">ТОЭ</a></li>
+            <li class="menu__item"><a class="menu__link" href="../../elektricheskie-mashiny/">Электрические машины</a></li>
+            <li class="menu__item">Решение задач
+                <div class="header__dropdown">
+                    <a href="../" class="header__dropdown-item">Решение задач по ТОЭ онлайн</a>
+                    <a href="../../zadachi-s-resheniem/" class="header__dropdown-item">Задачи с решением</a>
+                </div>
+            </li>
+            <li class="menu__item">Ещё +
+                <div class="header__dropdown">
+                    <a href="../../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/" class="header__dropdown-item">СПТ</a>
+                    <a href="../../category/radiokomponenenty/" class="header__dropdown-item">Радиокоипоненты</a>
+                    <a href="../../sample-page/" class="header__dropdown-item">О сайте</a>
+                </div>
+            </li>     
+        </ul>
+            
+            <div class="header__social">
+
+          
+            
+
+            </div>
+
+            <form class="search__form-desctop" role="search" method="get"  action="https://energoschool.ru/" >
+	<input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s"  />
+    <button class="search__button" type="submit" ><span class="icon-search"></span></button>
+</form>        
+
+            <div class="header__button">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__search">
+                    <span class="icon-search"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <nav class="nav__wrapper">
+            <form class="search__form" role="search" method="get" id="searchform" action="https://energoschool.ru/">
+    <input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s" id="s">
+    <button class="search__button" type="submit" id="searchsubmit"><span class="icon-search"></span></button>
+</form>
+
+                <ul><li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-85"><a href="../../">Главная</a></li>
+<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="../../toe/">ТОЭ</a></li>
+<li id="menu-item-2774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2774"><a href="../../elektricheskie-mashiny/">ЭЛЕКТРИЧЕСКИЕ МАШИНЫ</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="../../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/">СПТ</a></li>
+<li id="menu-item-4937" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-4937"><a href="../">Решение задач по тоэ онлайн</a></li>
+<li id="menu-item-3861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3861"><a href="../../category/radiokomponenenty/">Радиокомпоненты</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../../sample-page/">О сайте</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="../../zadachi-s-resheniem/">Задачи с решением</a></li>
+</ul>            </nav>
+        </div>
+    </div>
+</div>
+
+</header>
+
+
+  <div class="calculation__container">
+            <div class="calculation__blockBar">
+                <div id="0" class="calculation__block calculation__block-R"></div>
+                <div id="3" class="calculation__block calculation__block-K"></div>
+                <div id="1" class="calculation__block calculation__block-E"></div>
+                <div id="2" class="calculation__block calculation__block-B"></div>
+                <div id="4" class="calculation__block calculation__block-Corner"></div>
+            </div>
+            <div class="calculation__workTable">
+                <div class="grid__container">
+                    <div class="grid__row">
+                        <div data-x="0" data-y="0" class="grid__cell"></div>
+                        <div data-x="1" data-y="0" class="grid__cell"></div>
+                        <div data-x="2" data-y="0" class="grid__cell"></div>
+                        <div data-x="3" data-y="0" class="grid__cell"></div>
+                        <div data-x="4" data-y="0" class="grid__cell"></div>
+                        <div data-x="5" data-y="0" class="grid__cell"></div>
+                        <div data-x="6" data-y="0" class="grid__cell"></div>
+                        <div data-x="7" data-y="0" class="grid__cell"></div>
+                        <div data-x="8" data-y="0" class="grid__cell"></div>
+                        <div data-x="9" data-y="0" class="grid__cell"></div>
+                        <div data-x="10" data-y="0" class="grid__cell"></div>
+                    </div>
+                    <div class="grid__row">
+                        <div data-x="0" data-y="1" class="grid__cell"></div>
+                        <div data-x="1" data-y="1" class="grid__cell"></div>
+                        <div data-x="2" data-y="1" class="grid__cell"></div>
+                        <div data-x="3" data-y="1" class="grid__cell"></div>
+                        <div data-x="4" data-y="1" class="grid__cell"></div>
+                        <div data-x="5" data-y="1" class="grid__cell"></div>
+                        <div data-x="6" data-y="1" class="grid__cell"></div>
+                        <div data-x="7" data-y="1" class="grid__cell"></div>
+                        <div data-x="8" data-y="1" class="grid__cell"></div>
+                        <div data-x="9" data-y="1" class="grid__cell"></div>
+                        <div data-x="10" data-y="1" class="grid__cell"></div>
+                    </div>
+                    <div class="grid__row">
+                        <div data-x="0" data-y="2" class="grid__cell"></div>
+                        <div data-x="1" data-y="2" class="grid__cell"></div>
+                        <div data-x="2" data-y="2" class="grid__cell"></div>
+                        <div data-x="3" data-y="2" class="grid__cell"></div>
+                        <div data-x="4" data-y="2" class="grid__cell"></div>
+                        <div data-x="5" data-y="2" class="grid__cell"></div>
+                        <div data-x="6" data-y="2" class="grid__cell"></div>
+                        <div data-x="7" data-y="2" class="grid__cell"></div>
+                        <div data-x="8" data-y="2" class="grid__cell"></div>
+                        <div data-x="9" data-y="2" class="grid__cell"></div>
+                        <div data-x="10" data-y="2" class="grid__cell"></div>
+                    </div>
+                    <div class="grid__row">
+                        <div data-x="0" data-y="3" class="grid__cell"></div>
+                        <div data-x="1" data-y="3" class="grid__cell"></div>
+                        <div data-x="2" data-y="3" class="grid__cell"></div>
+                        <div data-x="3" data-y="3" class="grid__cell"></div>
+                        <div data-x="4" data-y="3" class="grid__cell"></div>
+                        <div data-x="5" data-y="3" class="grid__cell"></div>
+                        <div data-x="6" data-y="3" class="grid__cell"></div>
+                        <div data-x="7" data-y="3" class="grid__cell"></div>
+                        <div data-x="8" data-y="3" class="grid__cell"></div>
+                        <div data-x="9" data-y="3" class="grid__cell"></div>
+                        <div data-x="10" data-y="3" class="grid__cell"></div>
+                    </div>
+                    <div class="grid__row">
+                        <div data-x="0" data-y="4" class="grid__cell"></div>
+                        <div data-x="1" data-y="4" class="grid__cell"></div>
+                        <div data-x="2" data-y="4" class="grid__cell"></div>
+                        <div data-x="3" data-y="4" class="grid__cell"></div>
+                        <div data-x="4" data-y="4" class="grid__cell"></div>
+                        <div data-x="5" data-y="4" class="grid__cell"></div>
+                        <div data-x="6" data-y="4" class="grid__cell"></div>
+                        <div data-x="7" data-y="4" class="grid__cell"></div>
+                        <div data-x="8" data-y="4" class="grid__cell"></div>
+                        <div data-x="9" data-y="4" class="grid__cell"></div>
+                        <div data-x="10" data-y="4" class="grid__cell"></div>
+                    </div>
+                    <div class="grid__row">
+                        <div data-x="0" data-y="5" class="grid__cell"></div>
+                        <div data-x="1" data-y="5" class="grid__cell"></div>
+                        <div data-x="2" data-y="5" class="grid__cell"></div>
+                        <div data-x="3" data-y="5" class="grid__cell"></div>
+                        <div data-x="4" data-y="5" class="grid__cell"></div>
+                        <div data-x="5" data-y="5" class="grid__cell"></div>
+                        <div data-x="6" data-y="5" class="grid__cell"></div>
+                        <div data-x="7" data-y="5" class="grid__cell"></div>
+                        <div data-x="8" data-y="5" class="grid__cell"></div>
+                        <div data-x="9" data-y="5" class="grid__cell"></div>
+                        <div data-x="10" data-y="5" class="grid__cell"></div>
+                    </div>
+                </div>
+            </div>            
+            <div class="calculation__blocksettings">
+                <div class="blocksettings__container">
+                    <div class="blocksettings__top">
+                        <div class="blocksettings__title">Параметры элемента</div>
+                        <div class="blocksettings__wrapper-N">
+                            <label for="nblock">Номер элемента</label>
+                            <input id="nblock" required placeholder="" name="numberBlock" type="number" autocomplete="off" class="blocksettings__input">
+                            <div id="notifyN" class="blocsettings__notify"></div>
+                        </div>
+                        <div class="blocksettings__wrapper-Knots">
+                            <label for="knotsblock">Узел</label>
+                            <input id="knotsblock" maxlength="2" required placeholder="" autocomplete="off" name="numberBlock" class="blocksettings__input">
+                            <div id="notifyKnots" class="blocsettings__notify"></div>
+                        </div>
+                        <div class="blocksettings__wrapper-R">
+                            <label for="rblock">Сопротивление, Ом</label>
+                            <input id="rblock" autocomplete="off" required placeholder="Сопротивление, Ом" name="resistance" type="number" class="blocksettings__input">
+                            <div id ="notifyR" class="blocsettings__notify"></div>
+                        </div>
+                        <div class="blocksettings__wrapper-E">
+                            <label for="eblock">ЭДС источника, В</label>
+                            <input id="eblock" autocomplete="off" required placeholder="ЭДС источника, В" name="voltage" type="number" class="blocksettings__input">
+                            <div id="notifyE" class="blocsettings__notify"></div>
+                        </div>
+                    </div>
+                    <div class="blocksettings__bottom">
+                        <button id="rotate" class="btn btn__rotate">Повернуть элемент</button>
+                        <button id="remove" class="btn btn__remove">Удалить элемент</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__bottom">
+            <form class="calculation__settings">
+                <div class="calculation__formtop">
+                    <div class="calculation__formheader">Цепи постоянного тока</div>
+                    <a href="https://energoschool.ru/kak-ispolzovat-programmu-dlya-rascheta-elektricheskix-cepej-onlajn/" class="calculation__help" onclick="window.open(this.href);
+ return false">?</a>
+                </div>
+                <select name="choiceMethod">
+                    <option>Метод двух узлов</option>
+                    <option>Пункт 2</option>
+                  </select>
+                <button id="calculate" type="submit" class="btn btn__calculate">Рассчитать</button>
+                <div class="calculation__eror"></div>
+            </form>
+
+
+
+        
+    <div class="main-container">
+        <div class="sidebar">
+		<a rel="nofollow" href="https://edugrampromo.com/?rid=d9d9d50421f69a58&amp;promo=1"><img alt="Рреклама" src="../../../edugrampromo.com/assets/img/partners/promo/1a/b1/1ab1c60fb9a0de675233fd9d7a1286f6.png"></a>
+		</div>
+        <div class="content-container">
+                        <div class="error"></div>
+
+            <section class="answer"></section>
+            <footer>
+    <div class="container">
+        <div class="footer__content">
+                © energoschool.ru 2026 – All Right Reserved
+                <a class="footer__link" href="https://energoschool.ru/sample-page/">О сайте</a>
+        </div>    
+        
+    </div>
+</footer>        </div>
+    </div>    
+
+</div>
+<script defer src="https://energoschool.ru/wp-content/themes/electrikam2020/program/js/script.js"></script>
+
+<script type="text/javascript" defer src="https://energoschool.ru/wp-content/themes/electrikam2020/js/script.js" id="electrikam-scripts-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/navigation.js?ver=20151215" id="electrikam2020-navigation-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/skip-link-focus-fix.js?ver=20151215" id="electrikam2020-skip-link-focus-fix-js"></script>
+

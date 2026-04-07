@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Получение синусоидальной ЭДС | energoschool</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description"  content="Для получения э. д. с. синусоидальной формы применяется генератор переменного тока. Однако для изучения принципа получения синусоидального переменного тока" />
+
+<meta name="keywords"  content="Переменный ток,ТОЭ" />
+
+
+
+
+
+
+<link rel='stylesheet' id='electrikam-style-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/style.css?ver=6.9.1' type='text/css' media='all' />
+
+
+
+<link rel="icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-270x270.jpg" />
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106905110', 'ym');
+
+    ym(106905110, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106905110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+    <body>
+
+<header>
+    <div class="container">
+        <div class="header">
+        <nav class="header__nav">
+            <!-- <a class="header__logo" href="https://energoschool.ru">energoschool</a> -->				
+            						<p class="header__logo-block"><a class="header__logo" href="../" rel="home">energoschool</a></p>
+					            <ul class="header__menu">
+            <li class="menu__item"><a class="menu__link" href="../toe/">ТОЭ</a></li>
+            <li class="menu__item"><a class="menu__link" href="../elektricheskie-mashiny/">Электрические машины</a></li>
+            <li class="menu__item">Решение задач
+                <div class="header__dropdown">
+                    <a href="../reshenie-toe-onlajn/" class="header__dropdown-item">Решение задач по ТОЭ онлайн</a>
+                    <a href="../zadachi-s-resheniem/" class="header__dropdown-item">Задачи с решением</a>
+                </div>
+            </li>
+            <li class="menu__item">Ещё +
+                <div class="header__dropdown">
+                    <a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/" class="header__dropdown-item">СПТ</a>
+                    <a href="../category/radiokomponenenty/" class="header__dropdown-item">Радиокоипоненты</a>
+                    <a href="../sample-page/" class="header__dropdown-item">О сайте</a>
+                </div>
+            </li>     
+        </ul>
+            
+            <div class="header__social"></div>
+
+            <form class="search__form-desctop" role="search" method="get"  action="https://energoschool.ru/" >
+	<input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s"  />
+    <button class="search__button" type="submit" ><span class="icon-search"></span></button>
+</form>        
+
+            <div class="header__button">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__search">
+                    <span class="icon-search"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <nav class="nav__wrapper">
+            <form class="search__form" role="search" method="get" id="searchform" action="https://energoschool.ru/">
+    <input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s" id="s">
+    <button class="search__button" type="submit" id="searchsubmit"><span class="icon-search"></span></button>
+</form>
+
+                <ul><li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-85"><a href="../">Главная</a></li>
+<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="../toe/">ТОЭ</a></li>
+<li id="menu-item-2774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2774"><a href="../elektricheskie-mashiny/">ЭЛЕКТРИЧЕСКИЕ МАШИНЫ</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/">СПТ</a></li>
+<li id="menu-item-4937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4937"><a href="../reshenie-toe-onlajn/">Решение задач по тоэ онлайн</a></li>
+<li id="menu-item-3861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3861"><a href="../category/radiokomponenenty/">Радиокомпоненты</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../sample-page/">О сайте</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="../zadachi-s-resheniem/">Задачи с решением</a></li>
+</ul>            </nav>
+        </div>
+    </div>
+</div>
+</header>    
+
+<div class="main-container">
+  
+<div class="sidebar">
+    <nav>
+		
+
+	<details class="sidebar__details"
+	 open=""><summary class="sidebar__first">ТОЭ</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Задачи по ТОЭ</summary>                 
+				<ul><li class="sidebar__second"><a href="../zadachi-dlya-sxemy-s-posledovatelnym-soedineniem-katushki-i-kondensatorom-s-resheniem/">Задачи для схемы с последовательным соединением катушки и конденсатором с решением</a></li><li class="sidebar__second"><a href="../zadachi-s-resheniem-po-teme-nerazvetvlennye-cepi-peremennogo-toka/">Задачи с решением по теме: неразветвленные цепи переменного тока</a></li><li class="sidebar__second"><a href="../zadachi-na-posledovatelnoe-soedinenie-provodnikov/">Задачи на последовательное соединение проводников</a></li><li class="sidebar__second"><a href="../zadachi-na-parallelnoe-soedinenie-provodnikov/">Задачи на параллельное соединение проводников</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Магнитные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-magnitnogo-polya/">Основные характеристики магнитного поля</a></li><li class="sidebar__second"><a href="../magnitnyj-potok/">Магнитный поток</a></li><li class="sidebar__second"><a href="../magnitodvizhushhaya-sila-i-magnitnoe-napryazhenie/">Магнитодвижущая сила и магнитное напряжение</a></li><li class="sidebar__second"><a href="../magnitnoe-pole-provodnika-s-tokom/">Магнитное поле проводника с током</a></li><li class="sidebar__second"><a href="../zakon-polnogo-toka/">Закон полного тока</a></li><li class="sidebar__second"><a href="../magnitnaya-cep/">Магнитная цепь</a></li><li class="sidebar__second"><a href="../ferromagnitnye-materialy/">Ферромагнитные материалы</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Методы расчета цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij/">Расчёт электрической цепи постоянного тока методом узловых и контурных уравнений.</a></li><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-konturnyx-tokov/">Расчёт электрической цепи постоянного тока методом контурных токов.</a></li><li class="sidebar__second"><a href="../balans-moshhnostej-v-cepi-postoyannogo-toka/">Баланс мощностей в цепи постоянного тока</a></li><li class="sidebar__second"><a href="../metodom-nalozheniya-superpozicii-tokov/">Расчёт электрической цепи постоянного тока методом наложения (суперпозиции токов)</a></li><li class="sidebar__second"><a href="../formula-razbrosa/">Формула разброса</a></li><li class="sidebar__second"><a href="../metod-uzlovogo-napryazheniya-dvux-uzlov/">Метод узлового напряжения (двух узлов)</a></li><li class="sidebar__second"><a href="../metod-ekvivalentnogo-generatora/">Метод эквивалентного генератора</a></li><li class="sidebar__second"><a href="../metod-uzlovyx-potencialov-napryazhenij/">Метод узловых (потенциалов) напряжений</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Нелинейные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../nelinejnye-elementy-i-ix-xarakteristiki/">Нелинейные элементы и их характеристики</a></li><li class="sidebar__second"><a href="../graficheskij-raschet-nelinejnyx-elektricheskix-cepej/">Графический расчет нелинейных электрических цепей</a></li><li class="sidebar__second"><a href="../analiticheskij-metod-rascheta-nelinejnyx-elektricheskix-cepej/">Аналитический метод расчета нелинейных электрических цепей</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../istochnik_eds/">Источник ЭДС</a></li><li class="sidebar__second"><a href="../idealni_istochnik_toka/">Идеальный источник тока</a></li><li class="sidebar__second"><a href="../preobrazovanie-treugolnika-v-zvezdu-i-obratno/">Преобразование треугольника сопротивлений  в эквивалентную  звезду и обратно</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-rezistorov/">Последовательное соединение сопротивлений (резисторов)</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-soprotivlenij/">Параллельное соединение сопротивлений</a></li><li class="sidebar__second"><a href="../pervyj-i-vtoroj-zakon-kirxgofa/">Первый и второй закон Кирхгофа</a></li><li class="sidebar__second"><a href="../poterya-napryazheniya-v-provodax/">Потеря напряжения в проводах</a></li><li class="sidebar__second"><a href="../soedinenie-istochnikov-pitaniya/">Соединение источников питания</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../yomkost-v-cepi-peremennogo-toka/">Ёмкость в цепи переменного тока</a></li><li class="sidebar__second"><a href="../induktivnost-v-cepi-peremennogo-toka/">Индуктивность в цепи переменного тока</a></li><li class="sidebar__second"><a href="../aktivnoe-soprotivlenie-v-cepi-peremennogo-toka/">Активное сопротивление в цепи переменного тока</a></li><li class="sidebar__second"><a href="../realnaya-katushka-v-cepi-peremennogo-toka/">Реальная катушка в цепи переменного тока</a></li><li class="sidebar__second"><a href="../cep-peremennogo-toka-s-kondensatorom/">Цепь переменного тока с конденсатором</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-katushki-i-kondensatora/">Последовательное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-nerazvetvlennyx-cepej-peremennogo-toka/">Расчет неразветвленных цепей переменного тока</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-katushki-i-kondensatora/">Параллельное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-cepej-s-parallelnym-soedineniem-vetvej/">Расчет цепей с параллельным соединением ветвей</a></li><li class="sidebar__second"><a href="../topograficheskaya-diagramma/">Топографическая диаграмма</a></li><li class="sidebar__second"><a href="../simvolicheskij-kompleksnyj-metod-rascheta-cepej-peremennogo-toka/">Символический (комплексный) метод расчета цепей переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Трёхфазные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../trexfaznye-cepi/">Трехфазные цепи</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-zvezdoj/">Соединение обмоток генератора звездой</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-treugolnikom/">Соединение обмоток генератора треугольником</a></li></ul>
+				  </details><details class="sidebar__details-half" open=""><summary class="sidebar__half">Цепи синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../koefficient-moshhnosti-chto-eto-takoe/">Коэффициент мощности, что это такое?</a></li><li class="sidebar__second"><a href="../peremennyj-sinusoidalnyj-tok-i-osnovnye-xarakterizuyushhie-ego-velichiny/">Переменный (синусоидальный) ток и основные характеризующие его величины.</a></li><li class="sidebar__second"><a href="../srednee-i-dejstvuyushhee-znacheniya-sinusoidalno-izmenyayushhejsya-velichiny/">Среднее и действующее значения синусоидально изменяющейся величины</a></li><li class="sidebar__second"><a class="active" href="">Получение синусоидальной ЭДС</a></li><li class="sidebar__second"><a href="../vektornye-diagrammy-postroenie-vektornyx-diagramm/">Векторные диаграммы. Построение векторных диаграмм</a></li><li class="sidebar__second"><a href="../napryazhenie-cepi-peremennogo-toka/">Напряжение цепи переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические цепи постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../chto-takoe-elektricheskaya-sxema-vetv-uzel-kontur/">Что такое электрическая схема, ветвь, узел, контур.</a></li><li class="sidebar__second"><a href="../elektricheskij-zaryad-napryazhenie-napryazhennost-potencial/">Электрический заряд, напряжение, напряженность, потенциал</a></li><li class="sidebar__second"><a href="../provodniki-izolyatory-i-poluprovodniki/">Проводники, изоляторы и полупроводники</a></li><li class="sidebar__second"><a href="../elektricheskij-tok-i-ego-plotnost/">Электрический ток и его плотность</a></li><li class="sidebar__second"><a href="../soprotivlenie-provodimost-i-zakon-oma/">Сопротивление, проводимость и закон Ома</a></li><li class="sidebar__second"><a href="../zavisimost-soprotivleniya-ot-temperatury/">Зависимость сопротивления от температуры</a></li><li class="sidebar__second"><a href="../preobrazovanie-elektricheskoj-energii-v-teplovuyu/">Преобразование электрической энергии в тепловую</a></li><li class="sidebar__second"><a href="../prostejshaya-elektricheskaya-cep/">Простейшая электрическая цепь</a></li><li class="sidebar__second"><a href="../elektricheskaya-cep-s-dvumya-istochnikami/">Электрическая цепь с двумя источниками</a></li><li class="sidebar__second"><a href="../potencialnaya-diagramma/">Потенциальная диаграмма</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрическое поле</summary>                 
+				<ul><li class="sidebar__second"><a href="../elektricheskoe-pole-osnovnye-xarakteristiki-polya/">Электрическое поле основные характеристики</a></li><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-elektricheskogo-toka/">Основные характеристики электрического тока</a></li><li class="sidebar__second"><a href="../zakon-kulona/">Закон Кулона</a></li><li class="sidebar__second"><a href="../teorema-gaussa/">Теорема Гаусса</a></li><li class="sidebar__second"><a href="../dielektriki-v-elektricheskom-pole/">Диэлектрики в электрическом поле</a></li><li class="sidebar__second"><a href="../vektory-polyarizovannosti-i-smeshheniya/">Векторы поляризованности и смещения</a></li></ul>
+				  </details></details>
+
+
+<!---------------------------------------------- Электрические машины ------------------------------------------------>
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Электрические машины</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины основы</summary>                 
+				<ul><li class="sidebar__second"><a href="../klassifikaciya-elektricheskix-mashin/">Классификация электрических машин</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-elektricheskix-mashin/">Режимы работы электрических машин</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины переменного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../ustrojstvo-asinxronnogo-dvigatelya-ad/">Устройство асинхронного двигателя АД</a></li><li class="sidebar__second"><a href="../sxema-upravleniya-asinxronnym-dvigatelem-s-korotkozamknutym-rotorom/">Схема управления асинхронным двигателем с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../sxema-dinamicheskogo-tormozheniya-asinxronnogo-dvigatelya-s-korotkozamknutym-rotorom/">Схема динамического торможения асинхронного двигателя с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../cxema-puska-asinxronnogo-dvigatelya-s-faznym-rotorom-funkcii-vremeni/">Схема пуска асинхронного двигателя с фазным ротором, функции времени.</a></li><li class="sidebar__second"><a href="../cxema-puska-dvigatelya-s-faznym-rotorom-funkcii-toka/">Схема пуска двигателя с фазным ротором, функции тока.</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../prichiny-iskreniya-na-kollektore-mashiny-postoyannogo-toka/">Причины искрения на коллекторе машины постоянного тока</a></li><li class="sidebar__second"><a href="../obmotki-yakorya/">Обмотки якоря</a></li><li class="sidebar__second"><a href="../osnovnye-uravneniya-dvigatelya-postoyannogo-toka-dpt/">Основные уравнения двигателя постоянного тока (ДПТ)</a></li><li class="sidebar__second"><a href="../dvigatel-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Двигатель постоянного тока независимого возбуждения (ДПТ НВ)</a></li><li class="sidebar__second"><a href="../ustrojstvo-kollektornyx-mashin-postoyannogo-toka/">Устройство коллекторных машин постоянного тока</a></li><li class="sidebar__second"><a href="../pusk-i-tormoznye-rezhimy-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Пуск и тормозные режимы двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../regulirovanie-chastoty-vrashheniya-dvigatelej-nezavisimogo-vozbuzhdeniya/">Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-dvigatelnyj-generatornyj-tormozhenie-dvigatelya-postoyannogo-toka-dpt/">Режимы работы (двигательный, генераторный, торможение) двигателя постоянного тока ДПТ</a></li><li class="sidebar__second"><a href="../dpt-posledovatelnogo-vozbuzhdeniya/">ДПТ последовательного возбуждения</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-gpt-osnovnye-ponyatiya/">Генератор постоянного тока ГПТ: основные понятия.</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-nezavisimogo-vozbuzhdeniya/">Генератор постоянного тока независимого возбуждения</a></li><li class="sidebar__second"><a href="../generator-parallelnogo-vozbuzhdeniya/">Генератор параллельного возбуждения</a></li><li class="sidebar__second"><a href="../sxemy-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-s-rezistorom/">Схемы пуска двигателя постоянного тока независимого возбуждения с резистором</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-eds/">Схема пуска двигателя постоянного тока независимого возбуждения в функции ЭДС</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-toka/">Схема пуска двигателя постоянного тока независимого возбуждения в функции тока</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-vremeni/">Схема пуска двигателя постоянного тока независимого возбуждения в функции времени</a></li></ul>
+				  </details></details>
+
+	
+	<!-------------------------------------------------------- Решение задач по ТОЭ онлайн ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Решение задач по тоэ онлайн</summary><ul>      <li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij-i-metodom-konturnyx-tokov/">Как использовать программу для расчета электрической цепи постоянного тока методом узловых и контурных уравнений, и методом контурных токов</a></li><li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskix-cepej-onlajn/">Как использовать программу для расчета электрических цепей онлайн</a></li><li class="sidebar__second"><a href="../triangle/">Треугольник сопротивлений в звезду онлайн</a></li></ul></details>
+
+
+<!-------------------------------------------------------- СПТ  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Силовая преобразовательная техника</summary><ul>      <li class="sidebar__second"><a href="../spt/">Силовая преобразовательная техника: основы</a></li><li class="sidebar__second"><a href="../poluprovodnikovie_preobrazovateli/">Полупроводниковые преобразователи</a></li><li class="sidebar__second"><a href="../p-n-perexod/">p-n переход</a></li><li class="sidebar__second"><a href="../vypryamitelnyj-diod/">Выпрямительный диод</a></li></ul></details>
+
+<!-------------------------------------------------------- Радиокомпоненты  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Радиокомпоненты</summary><ul>      <li class="sidebar__second"><a href="../kondensator/">Конденсатор</a></li><li class="sidebar__second"><a href="../kondensatory-postoyannoj-yomkosti/">Конденсаторы постоянной ёмкости</a></li></ul></details>
+    </nav>
+</div>
+ 	 <div class="content-container">
+		<main id="main" class="site-main">
+
+		
+<Article id="post-726" class="paper__item">
+
+	<header class="header__main">
+		<h1 class="header__title header__title-h1">Получение синусоидальной ЭДС</h1>			</header><!-- .entry-header -->
+
+
+
+	<div class="paper__text">
+		<div class="paper__breadcrumbs">
+			<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/" itemprop="item"><span itemprop="name">ТОЭ</span></a><meta itemprop="position" content="1" /></span><span class="breadcrumbs__separator"> › </span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/cepi-sinusoidalnogo-toka/" itemprop="item"><span itemprop="name">Цепи синусоидального тока</span></a><meta itemprop="position" content="2" /></span></div><!-- .breadcrumbs -->		</div>
+		<div class="paper__commers">
+			<a href="https://edugrampromo.com/?rid=f95f92d3f61157d2&amp;promo=1" rel="nofollow">
+				<img class="paper__ads" src="../../www.hoteldelagare-palombebleue.com/appart-hotel-hendaye/author24-min.html" alt="ads"></a>
+		</div>
+
+		<p><em><strong>Для получения э. д. с. синусоидальной формы применяется генератор переменного тока</strong></em>. Однако для изучения принципа получения синусоидального переменного тока генератор можно заменить, проводником в виде прямоугольной рамки который вращают в равномерном магнитном поле с постоянной частотой. (рис. 12.1).<span id="more-726"></span></p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/02/00.jpg"><img fetchpriority="high" decoding="async" class="size-full wp-image-731 aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/00.jpg" alt="00" width="205" height="292" /></a></p>
+<h2>Вращение витка в равномерном магнитном поле</h2>
+<p>ЭДС в рамке, имеющей два активных проводника длиной <strong><em>l</em></strong><em> </em>равна:</p>
+<p style="text-align: center;"> <img decoding="async" class="alignnone size-full wp-image-732" style="color: #333333; font-style: normal;" src="https://energoschool.ru/wp-content/uploads/2014/02/0.jpg" alt="0" width="130" height="22" /></p>
+<p>(в дальнейшем все изменяющиеся во времени величины: токи, напряжения, э.д.с. и т. д.— будем обозначать малыми буквами в отличие от постоянных значений для тех же величин, которые обозначают большими буквами).</p>
+<p>При равномерном вращении рамки линейная скорость проводника не изменяется:<img decoding="async" class="size-full wp-image-733 aligncenter" style="color: #333333; font-style: normal; line-height: 24px; text-align: center;" src="https://energoschool.ru/wp-content/uploads/2014/02/1.jpg" alt="1" width="123" height="53" /></p>
+<p>а угол между направлением скорости и направлением магнитного поля изменяется пропорционально времени:<img loading="lazy" decoding="async" class="size-full wp-image-734 aligncenter" style="color: #333333; font-style: normal; line-height: 24px;" src="https://energoschool.ru/wp-content/uploads/2014/02/2.jpg" alt="2" width="131" height="31" /></p>
+<p>Угол β определяет положение вращающейся рамки относительно плоскости, перпендикулярной направлению магнитной индукции. (Положение рамки в момент начала отсчета времени t = 0 характеризуется углом β = 0.) Поэтому э.д. с. в рамке является синусоидальной функцией времени<a href="https://energoschool.ru/wp-content/uploads/2014/02/4.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/4.jpg" alt="4" width="150" height="27" /></a></p>
+<p>Наибольшей величины э. д. с. достигает при угле:</p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/02/7.jpg"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-727" src="https://energoschool.ru/wp-content/uploads/2014/02/7.jpg" alt="7" width="143" height="27" /></a></p>
+<p style="text-align: center;"><a href="https://energoschool.ru/wp-content/uploads/2014/02/5.jpg"><img loading="lazy" decoding="async" src="https://energoschool.ru/wp-content/uploads/2014/02/5.jpg" alt="5" width="122" height="28" /></a></p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/02/6.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/6.jpg" alt="6" width="124" height="27" /></a></p>
+<p>&nbsp;</p>
+<p>В рассмотренном случае синусоидальное изменение э. д. с. достигается за счет непрерывного изменения угла, под которым проводники пересекают линии магнитной индукции. Однако такой способ получения э. д. с. в практике не применяется,так как трудно создать равномерное поле в достаточно большом объеме.</p>
+<h2>Получение синусоидальной эдс в генераторе переменного тока</h2>
+<p>В электромашинных генераторах переменного тока промышленного типа синусоидальная э. д. с. получается при постоянном угле, но в неравномерном магнитном поле.</p>
+<div>
+<p>Магнитное поле генератора (радиальное) в воздушном зазоре между статором и ротором направлено по радиусам окружности ротора (рис. 12.2, а). Магнитная индукция вдоль воздушного зазора распределена по закону, близкому к синусоидальному. Такое распределение достигается соответствующей формой полюсных наконечников. Синусоидальный закон распределения магнитной индукции вдоль воздушного зазора показан на рис. 12.2, б в развернутом виде.<a href="https://energoschool.ru/wp-content/uploads/2014/02/10.jpg"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-738" src="https://energoschool.ru/wp-content/uploads/2014/02/10.jpg" alt="10" width="645" height="568" srcset="https://energoschool.ru/wp-content/uploads/2014/02/10.jpg 645w, https://energoschool.ru/wp-content/uploads/2014/02/10-300x264.jpg 300w, https://energoschool.ru/wp-content/uploads/2014/02/10-340x300.jpg 340w" sizes="auto, (max-width: 645px) 100vw, 645px" /></a></p>
+<p>В любой точке воздушного зазора, положение которой определя­ется углом β, отсчитанным от нейтральной плоскости (нейтрали) против движения часовой стрелки, магнитная индукция выражается уравнением<img loading="lazy" decoding="async" class="size-full wp-image-739 aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/11.jpg" alt="11" width="124" height="27" /></p>
+<p>Нейтральная плоскость перпендикулярна оси полюсов и делит магнитную систему на симметричные части, из которых одна относится к северному полюсу, а другая — к южному.</p>
+<p>Наибольшую величину магнитная индукция имеет под серединой полюсов, т. е. при углах β=90° (B<sub>m </sub>= B) и β=270° (B = -B<sub>m</sub>). На нейтрали (при β=0° и β=180°) магнитная индукция равна нулю (В = 0).</p>
+<p>На рис. 12.3 показана конструктивная схема генератора переменного тока с двумя парами полюсов, расположенных на роторе, а проводники обмотки, где наводится э. д. с., помещены в пазах сердечника статора.</p>
+<p>Отметим еще одну разновидность генераторов переменного тока — генератор с тремя обмотками (трехфазный генератор), которые на схеме рис. 12.4 представлены тремя витками на роторе. Плоскости витков находятся под углом 120° друг к другу.</p>
+<h2>ЭДС в обмотке генератора</h2>
+<p>При равномерном вращении ротора в его обмотке (на рис. 12.2, а — в витке) наводится э. д. с., определяемая формулой<a href="https://energoschool.ru/wp-content/uploads/2014/02/20.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/20.jpg" alt="20" width="101" height="27" /></a></p>
+<p>Подставляя выражение магнитной индукции, получим<a href="https://energoschool.ru/wp-content/uploads/2014/02/21.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/21.jpg" alt="21" width="145" height="25" /></a></p>
+<p>При β = 90°, т. е. в положении проводника под серединой полюса, наводится наибольшая ЭДС.<a href="https://energoschool.ru/wp-content/uploads/2014/02/22.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/22.jpg" alt="22" width="121" height="31" /></a></p>
+<p>Уравнение ЭДС можно записать так:<a href="https://energoschool.ru/wp-content/uploads/2014/02/23.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/23.jpg" alt="23" width="119" height="30" /></a></p>
+<p>Учитывая формулу<br />
+<img loading="lazy" decoding="async" src="https://energoschool.ru/wp-content/uploads/2014/02/2.jpg" alt="2" width="131" height="31" /></p>
+<p>, получим такую же зависимость э.д.с. от времени, как при вращении рамки (см. рис. 12.1), считая начальным положение витка (t=0), когда его плоскость совпадает с нейтралью:<a href="https://energoschool.ru/wp-content/uploads/2014/02/24.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/24.jpg" alt="24" width="127" height="30" /></a></p>
+<p>Таким образом, и в данном случае э. д. с. является синусоидальной функцией времени (рис. 12.5). Такой же результат получается, если вращать полюса, а проводники оставить неподвижными.<a href="https://energoschool.ru/wp-content/uploads/2014/02/25.jpg"><img loading="lazy" decoding="async" class="alignright" src="https://energoschool.ru/wp-content/uploads/2014/02/25.jpg" alt="25" width="305" height="233" /></a></p>
+<p>В прямоугольной системе координат э. д. с. можно изобразить в функции угла β=ωt или в функции времени t. Зависимость e(ωt) и e(t) можно изобразить одной кривой, но при разных масштабах по оси абсцисс, отличающихся в ω раз.</p>
+<h2>Ток в обмотке генератора</h2>
+<p>Если обмотку генератора замкнуть через сопротивление, то в образовавшейся цепи возникает синусоидальный ток, повторяющий по форме кривую э. д. с.</p>
+<p>Полагая сопротивление цепи линейным, равным R, получим для тока такое выражение:<a href="https://energoschool.ru/wp-content/uploads/2014/02/26.jpg"><img loading="lazy" decoding="async" class="aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/02/26.jpg" alt="26" width="288" height="54" /></a></p>
+<p align="left">где I<sub>m</sub> = E<sub>m</sub>/R— наибольшая величина тока.</p>
+<p>Напряжение и ток синусоидальной формы можно получить при помощи генераторов, не имеющих вращающихся частей и магнитных полюсов, например ламповых генераторов.</p>
+</div>
+	</div><!-- .entry-content -->
+	</Article>
+
+
+	<footer class="paper__footer entry-footer">
+
+            <div class="paper__link"></div>
+            <div class="paper__link"><span class="icon-price-tag"></span>
+			<a href="../tag/peremennyj-tok/" rel="tag">Переменный ток</a>,<a href="../tag/toe/" rel="tag">ТОЭ</a>			</div>
+            <div class="paper__link"><span class="icon-folder-open"></span>
+			<a href="../category/toe/cepi-sinusoidalnogo-toka/" rel="category tag">Цепи синусоидального тока</a>			</div>
+			<div class="paper__link">
+						</div>
+    </footer>
+
+
+<!-- #post-726 -->
+
+		</main><!-- #main -->
+	<footer>
+    <div class="container">
+        <div class="footer__content">
+                © energoschool.ru 2026 – All Right Reserved
+                <a class="footer__link" href="https://energoschool.ru/sample-page/">О сайте</a>
+        </div>    
+        
+    </div>
+</footer>	</div>
+
+    <div class="promo">
+  </div>
+
+
+</div>
+
+<script type="text/javascript" defer src="https://energoschool.ru/wp-content/themes/electrikam2020/js/script.js" id="electrikam-scripts-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/navigation.js?ver=20151215" id="electrikam2020-navigation-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/skip-link-focus-fix.js?ver=20151215" id="electrikam2020-skip-link-focus-fix-js"></script>

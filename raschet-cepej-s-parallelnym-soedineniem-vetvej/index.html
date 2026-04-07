@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Расчет цепей с параллельным соединением ветвей | energoschool</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description"  content="Расчет электрической цепи, рассмотренный в предыдущей статье, можно распространить на цепи, содержащие произвольное число приемников, соединенных параллельно." />
+
+<meta name="keywords"  content="Метод векторных диаграмм,Переменный ток,ТОЭ" />
+
+
+
+
+
+
+<link rel='stylesheet' id='electrikam-style-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/style.css?ver=6.9.1' type='text/css' media='all' />
+
+
+
+<link rel="icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-270x270.jpg" />
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106905110', 'ym');
+
+    ym(106905110, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106905110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+    <body>
+
+<header>
+    <div class="container">
+        <div class="header">
+        <nav class="header__nav">
+            <!-- <a class="header__logo" href="https://energoschool.ru">energoschool</a> -->				
+            						<p class="header__logo-block"><a class="header__logo" href="../" rel="home">energoschool</a></p>
+					            <ul class="header__menu">
+            <li class="menu__item"><a class="menu__link" href="../toe/">ТОЭ</a></li>
+            <li class="menu__item"><a class="menu__link" href="../elektricheskie-mashiny/">Электрические машины</a></li>
+            <li class="menu__item">Решение задач
+                <div class="header__dropdown">
+                    <a href="../reshenie-toe-onlajn/" class="header__dropdown-item">Решение задач по ТОЭ онлайн</a>
+                    <a href="../zadachi-s-resheniem/" class="header__dropdown-item">Задачи с решением</a>
+                </div>
+            </li>
+            <li class="menu__item">Ещё +
+                <div class="header__dropdown">
+                    <a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/" class="header__dropdown-item">СПТ</a>
+                    <a href="../category/radiokomponenenty/" class="header__dropdown-item">Радиокоипоненты</a>
+                    <a href="../sample-page/" class="header__dropdown-item">О сайте</a>
+                </div>
+            </li>     
+        </ul>
+            
+            <div class="header__social"></div>
+
+            <form class="search__form-desctop" role="search" method="get"  action="https://energoschool.ru/" >
+	<input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s"  />
+    <button class="search__button" type="submit" ><span class="icon-search"></span></button>
+</form>        
+
+            <div class="header__button">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__search">
+                    <span class="icon-search"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <nav class="nav__wrapper">
+            <form class="search__form" role="search" method="get" id="searchform" action="https://energoschool.ru/">
+    <input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s" id="s">
+    <button class="search__button" type="submit" id="searchsubmit"><span class="icon-search"></span></button>
+</form>
+
+                <ul><li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-85"><a href="../">Главная</a></li>
+<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="../toe/">ТОЭ</a></li>
+<li id="menu-item-2774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2774"><a href="../elektricheskie-mashiny/">ЭЛЕКТРИЧЕСКИЕ МАШИНЫ</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/">СПТ</a></li>
+<li id="menu-item-4937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4937"><a href="../reshenie-toe-onlajn/">Решение задач по тоэ онлайн</a></li>
+<li id="menu-item-3861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3861"><a href="../category/radiokomponenenty/">Радиокомпоненты</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../sample-page/">О сайте</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="../zadachi-s-resheniem/">Задачи с решением</a></li>
+</ul>            </nav>
+        </div>
+    </div>
+</div>
+</header>    
+
+<div class="main-container">
+  
+<div class="sidebar">
+    <nav>
+		
+
+	<details class="sidebar__details"
+	 open=""><summary class="sidebar__first">ТОЭ</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Задачи по ТОЭ</summary>                 
+				<ul><li class="sidebar__second"><a href="../zadachi-dlya-sxemy-s-posledovatelnym-soedineniem-katushki-i-kondensatorom-s-resheniem/">Задачи для схемы с последовательным соединением катушки и конденсатором с решением</a></li><li class="sidebar__second"><a href="../zadachi-s-resheniem-po-teme-nerazvetvlennye-cepi-peremennogo-toka/">Задачи с решением по теме: неразветвленные цепи переменного тока</a></li><li class="sidebar__second"><a href="../zadachi-na-posledovatelnoe-soedinenie-provodnikov/">Задачи на последовательное соединение проводников</a></li><li class="sidebar__second"><a href="../zadachi-na-parallelnoe-soedinenie-provodnikov/">Задачи на параллельное соединение проводников</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Магнитные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-magnitnogo-polya/">Основные характеристики магнитного поля</a></li><li class="sidebar__second"><a href="../magnitnyj-potok/">Магнитный поток</a></li><li class="sidebar__second"><a href="../magnitodvizhushhaya-sila-i-magnitnoe-napryazhenie/">Магнитодвижущая сила и магнитное напряжение</a></li><li class="sidebar__second"><a href="../magnitnoe-pole-provodnika-s-tokom/">Магнитное поле проводника с током</a></li><li class="sidebar__second"><a href="../zakon-polnogo-toka/">Закон полного тока</a></li><li class="sidebar__second"><a href="../magnitnaya-cep/">Магнитная цепь</a></li><li class="sidebar__second"><a href="../ferromagnitnye-materialy/">Ферромагнитные материалы</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Методы расчета цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij/">Расчёт электрической цепи постоянного тока методом узловых и контурных уравнений.</a></li><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-konturnyx-tokov/">Расчёт электрической цепи постоянного тока методом контурных токов.</a></li><li class="sidebar__second"><a href="../balans-moshhnostej-v-cepi-postoyannogo-toka/">Баланс мощностей в цепи постоянного тока</a></li><li class="sidebar__second"><a href="../metodom-nalozheniya-superpozicii-tokov/">Расчёт электрической цепи постоянного тока методом наложения (суперпозиции токов)</a></li><li class="sidebar__second"><a href="../formula-razbrosa/">Формула разброса</a></li><li class="sidebar__second"><a href="../metod-uzlovogo-napryazheniya-dvux-uzlov/">Метод узлового напряжения (двух узлов)</a></li><li class="sidebar__second"><a href="../metod-ekvivalentnogo-generatora/">Метод эквивалентного генератора</a></li><li class="sidebar__second"><a href="../metod-uzlovyx-potencialov-napryazhenij/">Метод узловых (потенциалов) напряжений</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Нелинейные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../nelinejnye-elementy-i-ix-xarakteristiki/">Нелинейные элементы и их характеристики</a></li><li class="sidebar__second"><a href="../graficheskij-raschet-nelinejnyx-elektricheskix-cepej/">Графический расчет нелинейных электрических цепей</a></li><li class="sidebar__second"><a href="../analiticheskij-metod-rascheta-nelinejnyx-elektricheskix-cepej/">Аналитический метод расчета нелинейных электрических цепей</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../istochnik_eds/">Источник ЭДС</a></li><li class="sidebar__second"><a href="../idealni_istochnik_toka/">Идеальный источник тока</a></li><li class="sidebar__second"><a href="../preobrazovanie-treugolnika-v-zvezdu-i-obratno/">Преобразование треугольника сопротивлений  в эквивалентную  звезду и обратно</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-rezistorov/">Последовательное соединение сопротивлений (резисторов)</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-soprotivlenij/">Параллельное соединение сопротивлений</a></li><li class="sidebar__second"><a href="../pervyj-i-vtoroj-zakon-kirxgofa/">Первый и второй закон Кирхгофа</a></li><li class="sidebar__second"><a href="../poterya-napryazheniya-v-provodax/">Потеря напряжения в проводах</a></li><li class="sidebar__second"><a href="../soedinenie-istochnikov-pitaniya/">Соединение источников питания</a></li></ul>
+				  </details><details class="sidebar__details-half" open=""><summary class="sidebar__half">Расчет цепей синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../yomkost-v-cepi-peremennogo-toka/">Ёмкость в цепи переменного тока</a></li><li class="sidebar__second"><a href="../induktivnost-v-cepi-peremennogo-toka/">Индуктивность в цепи переменного тока</a></li><li class="sidebar__second"><a href="../aktivnoe-soprotivlenie-v-cepi-peremennogo-toka/">Активное сопротивление в цепи переменного тока</a></li><li class="sidebar__second"><a href="../realnaya-katushka-v-cepi-peremennogo-toka/">Реальная катушка в цепи переменного тока</a></li><li class="sidebar__second"><a href="../cep-peremennogo-toka-s-kondensatorom/">Цепь переменного тока с конденсатором</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-katushki-i-kondensatora/">Последовательное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-nerazvetvlennyx-cepej-peremennogo-toka/">Расчет неразветвленных цепей переменного тока</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-katushki-i-kondensatora/">Параллельное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a class="active" href="">Расчет цепей с параллельным соединением ветвей</a></li><li class="sidebar__second"><a href="../topograficheskaya-diagramma/">Топографическая диаграмма</a></li><li class="sidebar__second"><a href="../simvolicheskij-kompleksnyj-metod-rascheta-cepej-peremennogo-toka/">Символический (комплексный) метод расчета цепей переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Трёхфазные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../trexfaznye-cepi/">Трехфазные цепи</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-zvezdoj/">Соединение обмоток генератора звездой</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-treugolnikom/">Соединение обмоток генератора треугольником</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Цепи синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../koefficient-moshhnosti-chto-eto-takoe/">Коэффициент мощности, что это такое?</a></li><li class="sidebar__second"><a href="../peremennyj-sinusoidalnyj-tok-i-osnovnye-xarakterizuyushhie-ego-velichiny/">Переменный (синусоидальный) ток и основные характеризующие его величины.</a></li><li class="sidebar__second"><a href="../srednee-i-dejstvuyushhee-znacheniya-sinusoidalno-izmenyayushhejsya-velichiny/">Среднее и действующее значения синусоидально изменяющейся величины</a></li><li class="sidebar__second"><a href="../poluchenie-sinusoidalnoj-eds/">Получение синусоидальной ЭДС</a></li><li class="sidebar__second"><a href="../vektornye-diagrammy-postroenie-vektornyx-diagramm/">Векторные диаграммы. Построение векторных диаграмм</a></li><li class="sidebar__second"><a href="../napryazhenie-cepi-peremennogo-toka/">Напряжение цепи переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические цепи постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../chto-takoe-elektricheskaya-sxema-vetv-uzel-kontur/">Что такое электрическая схема, ветвь, узел, контур.</a></li><li class="sidebar__second"><a href="../elektricheskij-zaryad-napryazhenie-napryazhennost-potencial/">Электрический заряд, напряжение, напряженность, потенциал</a></li><li class="sidebar__second"><a href="../provodniki-izolyatory-i-poluprovodniki/">Проводники, изоляторы и полупроводники</a></li><li class="sidebar__second"><a href="../elektricheskij-tok-i-ego-plotnost/">Электрический ток и его плотность</a></li><li class="sidebar__second"><a href="../soprotivlenie-provodimost-i-zakon-oma/">Сопротивление, проводимость и закон Ома</a></li><li class="sidebar__second"><a href="../zavisimost-soprotivleniya-ot-temperatury/">Зависимость сопротивления от температуры</a></li><li class="sidebar__second"><a href="../preobrazovanie-elektricheskoj-energii-v-teplovuyu/">Преобразование электрической энергии в тепловую</a></li><li class="sidebar__second"><a href="../prostejshaya-elektricheskaya-cep/">Простейшая электрическая цепь</a></li><li class="sidebar__second"><a href="../elektricheskaya-cep-s-dvumya-istochnikami/">Электрическая цепь с двумя источниками</a></li><li class="sidebar__second"><a href="../potencialnaya-diagramma/">Потенциальная диаграмма</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрическое поле</summary>                 
+				<ul><li class="sidebar__second"><a href="../elektricheskoe-pole-osnovnye-xarakteristiki-polya/">Электрическое поле основные характеристики</a></li><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-elektricheskogo-toka/">Основные характеристики электрического тока</a></li><li class="sidebar__second"><a href="../zakon-kulona/">Закон Кулона</a></li><li class="sidebar__second"><a href="../teorema-gaussa/">Теорема Гаусса</a></li><li class="sidebar__second"><a href="../dielektriki-v-elektricheskom-pole/">Диэлектрики в электрическом поле</a></li><li class="sidebar__second"><a href="../vektory-polyarizovannosti-i-smeshheniya/">Векторы поляризованности и смещения</a></li></ul>
+				  </details></details>
+
+
+<!---------------------------------------------- Электрические машины ------------------------------------------------>
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Электрические машины</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины основы</summary>                 
+				<ul><li class="sidebar__second"><a href="../klassifikaciya-elektricheskix-mashin/">Классификация электрических машин</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-elektricheskix-mashin/">Режимы работы электрических машин</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины переменного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../ustrojstvo-asinxronnogo-dvigatelya-ad/">Устройство асинхронного двигателя АД</a></li><li class="sidebar__second"><a href="../sxema-upravleniya-asinxronnym-dvigatelem-s-korotkozamknutym-rotorom/">Схема управления асинхронным двигателем с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../sxema-dinamicheskogo-tormozheniya-asinxronnogo-dvigatelya-s-korotkozamknutym-rotorom/">Схема динамического торможения асинхронного двигателя с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../cxema-puska-asinxronnogo-dvigatelya-s-faznym-rotorom-funkcii-vremeni/">Схема пуска асинхронного двигателя с фазным ротором, функции времени.</a></li><li class="sidebar__second"><a href="../cxema-puska-dvigatelya-s-faznym-rotorom-funkcii-toka/">Схема пуска двигателя с фазным ротором, функции тока.</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../prichiny-iskreniya-na-kollektore-mashiny-postoyannogo-toka/">Причины искрения на коллекторе машины постоянного тока</a></li><li class="sidebar__second"><a href="../obmotki-yakorya/">Обмотки якоря</a></li><li class="sidebar__second"><a href="../osnovnye-uravneniya-dvigatelya-postoyannogo-toka-dpt/">Основные уравнения двигателя постоянного тока (ДПТ)</a></li><li class="sidebar__second"><a href="../dvigatel-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Двигатель постоянного тока независимого возбуждения (ДПТ НВ)</a></li><li class="sidebar__second"><a href="../ustrojstvo-kollektornyx-mashin-postoyannogo-toka/">Устройство коллекторных машин постоянного тока</a></li><li class="sidebar__second"><a href="../pusk-i-tormoznye-rezhimy-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Пуск и тормозные режимы двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../regulirovanie-chastoty-vrashheniya-dvigatelej-nezavisimogo-vozbuzhdeniya/">Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-dvigatelnyj-generatornyj-tormozhenie-dvigatelya-postoyannogo-toka-dpt/">Режимы работы (двигательный, генераторный, торможение) двигателя постоянного тока ДПТ</a></li><li class="sidebar__second"><a href="../dpt-posledovatelnogo-vozbuzhdeniya/">ДПТ последовательного возбуждения</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-gpt-osnovnye-ponyatiya/">Генератор постоянного тока ГПТ: основные понятия.</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-nezavisimogo-vozbuzhdeniya/">Генератор постоянного тока независимого возбуждения</a></li><li class="sidebar__second"><a href="../generator-parallelnogo-vozbuzhdeniya/">Генератор параллельного возбуждения</a></li><li class="sidebar__second"><a href="../sxemy-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-s-rezistorom/">Схемы пуска двигателя постоянного тока независимого возбуждения с резистором</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-eds/">Схема пуска двигателя постоянного тока независимого возбуждения в функции ЭДС</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-toka/">Схема пуска двигателя постоянного тока независимого возбуждения в функции тока</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-vremeni/">Схема пуска двигателя постоянного тока независимого возбуждения в функции времени</a></li></ul>
+				  </details></details>
+
+	
+	<!-------------------------------------------------------- Решение задач по ТОЭ онлайн ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Решение задач по тоэ онлайн</summary><ul>      <li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij-i-metodom-konturnyx-tokov/">Как использовать программу для расчета электрической цепи постоянного тока методом узловых и контурных уравнений, и методом контурных токов</a></li><li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskix-cepej-onlajn/">Как использовать программу для расчета электрических цепей онлайн</a></li><li class="sidebar__second"><a href="../triangle/">Треугольник сопротивлений в звезду онлайн</a></li></ul></details>
+
+
+<!-------------------------------------------------------- СПТ  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Силовая преобразовательная техника</summary><ul>      <li class="sidebar__second"><a href="../spt/">Силовая преобразовательная техника: основы</a></li><li class="sidebar__second"><a href="../poluprovodnikovie_preobrazovateli/">Полупроводниковые преобразователи</a></li><li class="sidebar__second"><a href="../p-n-perexod/">p-n переход</a></li><li class="sidebar__second"><a href="../vypryamitelnyj-diod/">Выпрямительный диод</a></li></ul></details>
+
+<!-------------------------------------------------------- Радиокомпоненты  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Радиокомпоненты</summary><ul>      <li class="sidebar__second"><a href="../kondensator/">Конденсатор</a></li><li class="sidebar__second"><a href="../kondensatory-postoyannoj-yomkosti/">Конденсаторы постоянной ёмкости</a></li></ul></details>
+    </nav>
+</div>
+ 	 <div class="content-container">
+		<main id="main" class="site-main">
+
+		
+<Article id="post-2010" class="paper__item">
+
+	<header class="header__main">
+		<h1 class="header__title header__title-h1">Расчет цепей с параллельным соединением ветвей</h1>			</header><!-- .entry-header -->
+
+
+
+	<div class="paper__text">
+		<div class="paper__breadcrumbs">
+			<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/" itemprop="item"><span itemprop="name">ТОЭ</span></a><meta itemprop="position" content="1" /></span><span class="breadcrumbs__separator"> › </span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/raschet-cepej-sinusoidalnogo-toka/" itemprop="item"><span itemprop="name">Расчет цепей синусоидального тока</span></a><meta itemprop="position" content="2" /></span></div><!-- .breadcrumbs -->		</div>
+		<div class="paper__commers">
+			<a href="https://edugrampromo.com/?rid=f95f92d3f61157d2&amp;promo=1" rel="nofollow">
+				<img class="paper__ads" src="../../www.hoteldelagare-palombebleue.com/appart-hotel-hendaye/author24-min.html" alt="ads"></a>
+		</div>
+
+		<p style="text-align: justify;">Расчет электрической цепи, рассмотренный в <a title="Параллельное соединение катушки и конденсатора" href="../parallelnoe-soedinenie-katushki-i-kondensatora/">предыдущей статье</a>, можно распространить на цепи, содержащие произвольное&nbsp;число приемников, соединенных параллельно.</p>
+<p style="text-align: justify;"><a href="https://energoschool.ru/wp-content/uploads/2014/05/17.png"><img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-2017" src="https://energoschool.ru/wp-content/uploads/2014/05/17.png" alt="1" width="634" height="249" srcset="https://energoschool.ru/wp-content/uploads/2014/05/17.png 634w, https://energoschool.ru/wp-content/uploads/2014/05/17-300x117.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/17-500x196.png 500w" sizes="(max-width: 634px) 100vw, 634px" /></a><span id="more-2010"></span></p>
+<p style="text-align: justify;">На рис. 14.14, а параллельно соединены те же элементы цепи, которые были рассмотрены <a title="Расчет неразветвленных цепей переменного тока" href="../raschet-nerazvetvlennyx-cepej-peremennogo-toka/">при последовательном соединении</a>&nbsp;(см. рис. 14.7, а). Предположим, что для этой цепи известны напряжение <strong style="color: #373737;">u = U<sub>m</sub>sinωt</strong><span style="color: #373737;">.</span>&nbsp;и параметры элементов цепи R, L, С. Требуется&nbsp;найти токи в цепи и мощность.</p>
+<h2 style="text-align: justify;">Векторная диаграмма для цепи с параллельным соединением ветвей.&nbsp;Метод векторных диаграмм</h2>
+<p style="text-align: justify;">Для мгновенных величин в соответствии с первым законом Кирхгофа уравнение токов</p>
+<p style="text-align: center;"><img decoding="async" class="alignnone size-full wp-image-2018" src="https://energoschool.ru/wp-content/uploads/2014/05/22.png" alt="2" width="260" height="33"></p>
+<p style="text-align: justify;">Представляя ток в каждой ветви суммой активной и реактивной&nbsp;составляющих, получим</p>
+<p><img decoding="async" class="size-full wp-image-2015 aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/05/32.png" alt="3" width="410" height="40" srcset="https://energoschool.ru/wp-content/uploads/2014/05/32.png 410w, https://energoschool.ru/wp-content/uploads/2014/05/32-300x29.png 300w" sizes="(max-width: 410px) 100vw, 410px" /></p>
+<p style="text-align: justify;">Для действующих токов нужно написать векторное уравнение</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2016" src="https://energoschool.ru/wp-content/uploads/2014/05/42.png" alt="4" width="429" height="32" srcset="https://energoschool.ru/wp-content/uploads/2014/05/42.png 429w, https://energoschool.ru/wp-content/uploads/2014/05/42-300x22.png 300w" sizes="auto, (max-width: 429px) 100vw, 429px" /></p>
+<p style="text-align: justify;">Численные значения векторов токов определяются произведением&nbsp;напряжения и проводимости соответствующей ветви.</p>
+<p style="text-align: justify;">На рис. 14.14, б построена векторная диаграмма, соответствующая&nbsp;этому уравнению. За исходный вектор принят, как обычно при расчете&nbsp;цепей с <em><strong>параллельным</strong><strong> соединением ветвей, </strong><strong><em>вектор</em> напряжения U,&nbsp;</strong></em>а затем нанесены векторы тока в каждой ветви, причем направления&nbsp;их относительно вектора напряжения выбраны в соответствии с характером проводимости ветвей. Начальной точкой при построении диаграммы токов выбрана точка, совпадающая с началом вектора напряжения. Из этой точки проведен вектор <em><strong>l<sub>1a</sub></strong></em> <strong><em>активного тока</em> </strong>ветви<em><strong> I&nbsp;</strong></em>(по фазе совпадает c напряжением), а из конца его проведен вектор <strong>I<sub>1p</sub> <em>реактивного тока</em></strong> той же ветви (опережает напряжение на 90°). Эти два вектора&nbsp;являются составляющими вектора<em><strong> I<sub>1</sub> тока первой ветви</strong></em>. Далее в том же&nbsp;порядке отложены векторы токов других ветвей. Следует обратить&nbsp;внимание на то, что проводимость<em><strong> ветви 3-3 активная</strong></em>, поэтому реактивная составляющая тока в этой ветви равна нулю. В<em><strong> ветвях 4-4 и 5-5&nbsp;проводимости реактивные</strong></em>, поэтому в составе этих токов нет активных&nbsp;составляющих.</p>
+<h2 style="text-align: justify;">Расчетные формулы для цепи с параллельным соединением ветвей. Метод векторных диаграмм</h2>
+<p style="text-align: justify;">Из <em><strong>векторной диаграммы</strong></em> видно, что все активные составляющие&nbsp;векторов тока направлены одинаково — параллельно вектору напряжения, поэтому векторное сложение их можно заменить арифметическими найти активную составляющую общего тока: <em><strong>I<sub>а</sub> = I<sub>1a</sub> + I<sub>2a</sub> + I<sub>3a</sub></strong></em>.</p>
+<p></p>
+<p style="text-align: justify;"><em><strong>Реактивные составляющие</strong></em> векторов токов перпендикулярны вектору напряжения, причем индуктивные токи направлены в одну сторону, а емкостные — в другую. Поэтому реактивная составляющая общего тока в цепи определяется их алгебраической суммой, в которой&nbsp;индуктивные токи считаются положительными, а емкостные — отрицательными: <em><strong>I<sub>p</sub> = &#8212; I<sub>1p</sub> + I<sub>2p</sub> &#8212; I<sub>4p</sub> + I<sub>5p</sub></strong></em>.</p>
+<p style="text-align: justify;">Векторы активного, реактивного и полного тока всей цепи образуют прямоугольный треугольник, из которого следует</p>
+<p style="text-align: justify;"><a href="https://energoschool.ru/wp-content/uploads/2014/05/52.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2019" src="https://energoschool.ru/wp-content/uploads/2014/05/52.png" alt="5" width="630" height="49" srcset="https://energoschool.ru/wp-content/uploads/2014/05/52.png 630w, https://energoschool.ru/wp-content/uploads/2014/05/52-300x23.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/52-500x38.png 500w" sizes="auto, (max-width: 630px) 100vw, 630px" /></a>Подставив величины токов в ветвях, выраженные через напряжение и соответствующие проводимости, получим</p>
+<p style="text-align: justify;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2020" src="https://energoschool.ru/wp-content/uploads/2014/05/62.png" alt="6" width="641" height="152" srcset="https://energoschool.ru/wp-content/uploads/2014/05/62.png 641w, https://energoschool.ru/wp-content/uploads/2014/05/62-300x71.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/62-500x118.png 500w" sizes="auto, (max-width: 641px) 100vw, 641px" /></p>
+<p style="text-align: justify;">где <em><strong>∑Gn</strong></em> — <em><strong>общая активная проводимость</strong></em>,&nbsp;<em><strong>равная арифметической сумме активных проводимостей всех ветвей</strong></em>; <em><strong>∑Bn</strong></em>&nbsp;—<em><strong> общая реактивная</strong></em><br />
+<em><strong>проводимость, равная алгебраической сумме реактивных проводимостей всех ветвей</strong></em> (в этой сумме индуктивные проводимости считаются положительными, а емкостные — отрицательными); <em><strong>Y — полная&nbsp;проводимость цепи;<img loading="lazy" decoding="async" class="alignnone size-full wp-image-2021" src="https://energoschool.ru/wp-content/uploads/2014/05/72.png" alt="7" width="618" height="48" srcset="https://energoschool.ru/wp-content/uploads/2014/05/72.png 618w, https://energoschool.ru/wp-content/uploads/2014/05/72-300x23.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/72-500x38.png 500w" sizes="auto, (max-width: 618px) 100vw, 618px" /></strong></em></p>
+<p style="text-align: justify;">Таким образом получена знакомая уже формула (14.12), связывающая напряжение, ток и проводимость цепи [ср. (14.12) и (<a title="Параллельное соединение катушки и конденсатора" href="../parallelnoe-soedinenie-katushki-i-kondensatora/">14.8</a>)].</p>
+<p style="text-align: justify;"><em><strong>Следует обратить внимание на возможные ошибки при определении полной проводимости цепи по известным проводимостям отдельных ветвей:</strong></em> <strong><span style="color: #ff0000;">нельзя</span></strong> складывать арифметически проводимости ветвей,&nbsp;если токи в них не совпадают по фазе.</p>
+<p style="text-align: justify;"><em><strong>Полную проводимость</strong></em> цепи в общем случае определяют как гипотенузу прямоугольного треугольника, катетами которого являются&nbsp;выраженные в определенном масштабе активная и реактивная проводимости всей цепи:</p>
+<p style="text-align: justify;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2022" src="https://energoschool.ru/wp-content/uploads/2014/05/82.png" alt="8" width="642" height="65" srcset="https://energoschool.ru/wp-content/uploads/2014/05/82.png 642w, https://energoschool.ru/wp-content/uploads/2014/05/82-300x30.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/82-500x50.png 500w" sizes="auto, (max-width: 642px) 100vw, 642px" />От треугольника токов можно перейти также к треугольнику&nbsp;мощностей и для определения мощности получить известные уже&nbsp;формулы</p>
+<p style="text-align: justify;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2023" src="https://energoschool.ru/wp-content/uploads/2014/05/92.png" alt="9" width="609" height="33" srcset="https://energoschool.ru/wp-content/uploads/2014/05/92.png 609w, https://energoschool.ru/wp-content/uploads/2014/05/92-300x16.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/92-500x27.png 500w" sizes="auto, (max-width: 609px) 100vw, 609px" /><em><strong>Активную мощность</strong></em> цепи можно представить как арифметическую&nbsp;сумму активных мощностей ветвей.</p>
+<p style="text-align: justify;"><em><strong>Реактивная мощность</strong> </em>цепи равна алгебраической сумме мощностей&nbsp;ветвей. В этом случае индуктивная мощность берется положительной,&nbsp;а емкостная — отрицательной:<img loading="lazy" decoding="async" class="alignnone size-full wp-image-2025" src="https://energoschool.ru/wp-content/uploads/2014/05/102.png" alt="10" width="644" height="87" srcset="https://energoschool.ru/wp-content/uploads/2014/05/102.png 644w, https://energoschool.ru/wp-content/uploads/2014/05/102-300x40.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/102-500x67.png 500w" sizes="auto, (max-width: 644px) 100vw, 644px" /></p>
+<h2 style="text-align: justify;">Расчет цепи без определения проводимостей ветвей</h2>
+<p style="text-align: justify;">Расчет электрической цепи при параллельном соединении ветвей&nbsp;можно выполнить <em><strong>без предварительного определения активных и&nbsp;реактивных проводимостей</strong></em>, т. е. представляя элементы цепи в&nbsp;схеме замещения их активными и реактивными сопротивлениями&nbsp;(рис. 14.15, а).</p>
+<p style="text-align: justify;">Определяют токи в ветвях по формуле (14.4);</p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/05/111.png"><img loading="lazy" decoding="async" class="size-full wp-image-2026 aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/05/111.png" alt="11" width="294" height="40"></a></p>
+<p style="text-align: justify;">где<em><strong> Z<sub>1</sub>, Z<sub>2</sub></strong> </em>и т. д. —<em><strong> полные сопротивления ветвей.</strong></em></p>
+<p style="text-align: justify;">Полное сопротивление ветви, в которую входят несколько элементов, соединенных последовательно, определяют по формуле (14.5).</p>
+<p style="text-align: justify;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2027" src="https://energoschool.ru/wp-content/uploads/2014/05/121.png" alt="12" width="631" height="209" srcset="https://energoschool.ru/wp-content/uploads/2014/05/121.png 631w, https://energoschool.ru/wp-content/uploads/2014/05/121-300x99.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/121-500x165.png 500w" sizes="auto, (max-width: 631px) 100vw, 631px" />Для построения векторной диаграммы токов (рис. 14.15, б) можно&nbsp;определить активную и реактивную составляющие тока каждой ветви&nbsp;по формулам</p>
+<p style="text-align: center;"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2028" src="https://energoschool.ru/wp-content/uploads/2014/05/131.png" alt="13" width="354" height="63" srcset="https://energoschool.ru/wp-content/uploads/2014/05/131.png 354w, https://energoschool.ru/wp-content/uploads/2014/05/131-300x53.png 300w" sizes="auto, (max-width: 354px) 100vw, 354px" /></p>
+<p style="text-align: justify;">и т. д. для всех ветвей.</p>
+<p style="text-align: justify;">В этом случае отпадает необходимость определения углов <em><strong>ф<sub>1</sub> ф<sub>2&nbsp;</sub></strong></em>и построения их на чертеже.</p>
+<p style="text-align: justify;">Ток в неразветвленной части цепи</p>
+<p><img loading="lazy" decoding="async" class="size-full wp-image-2024 aligncenter" src="https://energoschool.ru/wp-content/uploads/2014/05/141.png" alt="14" width="348" height="43" srcset="https://energoschool.ru/wp-content/uploads/2014/05/141.png 348w, https://energoschool.ru/wp-content/uploads/2014/05/141-300x37.png 300w" sizes="auto, (max-width: 348px) 100vw, 348px" /></p>
+<p style="text-align: justify;">Общий ток и мощность цепи определяются далее в том же порядке,&nbsp;какой был показан ранее (см. формулы (14.10), (14.15), (14.16)].</p>
+<h2 style="text-align: justify;">Задача</h2>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/05/151.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2029" src="https://energoschool.ru/wp-content/uploads/2014/05/151.png" alt="15" width="782" height="469" srcset="https://energoschool.ru/wp-content/uploads/2014/05/151.png 782w, https://energoschool.ru/wp-content/uploads/2014/05/151-300x179.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/151-500x300.png 500w" sizes="auto, (max-width: 782px) 100vw, 782px" /></a> <a href="https://energoschool.ru/wp-content/uploads/2014/05/18.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2030" src="https://energoschool.ru/wp-content/uploads/2014/05/18.png" alt="18" width="770" height="318" srcset="https://energoschool.ru/wp-content/uploads/2014/05/18.png 770w, https://energoschool.ru/wp-content/uploads/2014/05/18-300x123.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/18-500x206.png 500w" sizes="auto, (max-width: 770px) 100vw, 770px" /></a> <a href="https://energoschool.ru/wp-content/uploads/2014/05/19.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2031" src="https://energoschool.ru/wp-content/uploads/2014/05/19.png" alt="19" width="624" height="600" srcset="https://energoschool.ru/wp-content/uploads/2014/05/19.png 624w, https://energoschool.ru/wp-content/uploads/2014/05/19-300x288.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/19-312x300.png 312w" sizes="auto, (max-width: 624px) 100vw, 624px" /></a> <a href="https://energoschool.ru/wp-content/uploads/2014/05/20.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2032" src="https://energoschool.ru/wp-content/uploads/2014/05/20.png" alt="20" width="710" height="608" srcset="https://energoschool.ru/wp-content/uploads/2014/05/20.png 710w, https://energoschool.ru/wp-content/uploads/2014/05/20-300x256.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/20-350x300.png 350w" sizes="auto, (max-width: 710px) 100vw, 710px" /></a> <a href="https://energoschool.ru/wp-content/uploads/2014/05/211.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-2033" src="https://energoschool.ru/wp-content/uploads/2014/05/211.png" alt="21" width="794" height="578" srcset="https://energoschool.ru/wp-content/uploads/2014/05/211.png 794w, https://energoschool.ru/wp-content/uploads/2014/05/211-300x218.png 300w, https://energoschool.ru/wp-content/uploads/2014/05/211-412x300.png 412w" sizes="auto, (max-width: 794px) 100vw, 794px" /></a></p>
+	</div><!-- .entry-content -->
+	</Article>
+
+
+	<footer class="paper__footer entry-footer">
+
+            <div class="paper__link"></div>
+            <div class="paper__link"><span class="icon-price-tag"></span>
+			<a href="../tag/metod-vektornyx-diagramm/" rel="tag">Метод векторных диаграмм</a>,<a href="../tag/peremennyj-tok/" rel="tag">Переменный ток</a>,<a href="../tag/toe/" rel="tag">ТОЭ</a>			</div>
+            <div class="paper__link"><span class="icon-folder-open"></span>
+			<a href="../category/toe/raschet-cepej-sinusoidalnogo-toka/" rel="category tag">Расчет цепей синусоидального тока</a>			</div>
+			<div class="paper__link">
+						</div>
+    </footer>
+
+
+<!-- #post-2010 -->
+
+		</main><!-- #main -->
+	<footer>
+    <div class="container">
+        <div class="footer__content">
+                © energoschool.ru 2026 – All Right Reserved
+                <a class="footer__link" href="https://energoschool.ru/sample-page/">О сайте</a>
+        </div>    
+        
+    </div>
+</footer>	</div>
+
+    <div class="promo">
+  </div>
+
+
+</div>
+
+<script type="text/javascript" defer src="https://energoschool.ru/wp-content/themes/electrikam2020/js/script.js" id="electrikam-scripts-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/navigation.js?ver=20151215" id="electrikam2020-navigation-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/skip-link-focus-fix.js?ver=20151215" id="electrikam2020-skip-link-focus-fix-js"></script>

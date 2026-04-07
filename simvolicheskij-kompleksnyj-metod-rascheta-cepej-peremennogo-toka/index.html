@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Символический (комплексный) метод расчета цепей переменного тока | energoschool</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description"  content="Одним из способов расчета цепей переменного тока является комплексный, или еще как говорят, символический метод расчета. Этот метод применяется при анализе схем" />
+
+<meta name="keywords"  content="Задачи с решением,Решение задач по ТОЭ,Символический метод,ТОЭ" />
+
+
+
+
+
+
+<link rel='stylesheet' id='electrikam-style-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/style.css?ver=6.9.1' type='text/css' media='all' />
+
+
+
+<link rel="icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-270x270.jpg" />
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106905110', 'ym');
+
+    ym(106905110, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106905110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+    <body>
+
+<header>
+    <div class="container">
+        <div class="header">
+        <nav class="header__nav">
+            <!-- <a class="header__logo" href="https://energoschool.ru">energoschool</a> -->				
+            						<p class="header__logo-block"><a class="header__logo" href="../" rel="home">energoschool</a></p>
+					            <ul class="header__menu">
+            <li class="menu__item"><a class="menu__link" href="../toe/">ТОЭ</a></li>
+            <li class="menu__item"><a class="menu__link" href="../elektricheskie-mashiny/">Электрические машины</a></li>
+            <li class="menu__item">Решение задач
+                <div class="header__dropdown">
+                    <a href="../reshenie-toe-onlajn/" class="header__dropdown-item">Решение задач по ТОЭ онлайн</a>
+                    <a href="../zadachi-s-resheniem/" class="header__dropdown-item">Задачи с решением</a>
+                </div>
+            </li>
+            <li class="menu__item">Ещё +
+                <div class="header__dropdown">
+                    <a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/" class="header__dropdown-item">СПТ</a>
+                    <a href="../category/radiokomponenenty/" class="header__dropdown-item">Радиокоипоненты</a>
+                    <a href="../sample-page/" class="header__dropdown-item">О сайте</a>
+                </div>
+            </li>     
+        </ul>
+            
+            <div class="header__social"></div>
+
+            <form class="search__form-desctop" role="search" method="get"  action="https://energoschool.ru/" >
+	<input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s"  />
+    <button class="search__button" type="submit" ><span class="icon-search"></span></button>
+</form>        
+
+            <div class="header__button">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__search">
+                    <span class="icon-search"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <nav class="nav__wrapper">
+            <form class="search__form" role="search" method="get" id="searchform" action="https://energoschool.ru/">
+    <input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s" id="s">
+    <button class="search__button" type="submit" id="searchsubmit"><span class="icon-search"></span></button>
+</form>
+
+                <ul><li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-85"><a href="../">Главная</a></li>
+<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="../toe/">ТОЭ</a></li>
+<li id="menu-item-2774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2774"><a href="../elektricheskie-mashiny/">ЭЛЕКТРИЧЕСКИЕ МАШИНЫ</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/">СПТ</a></li>
+<li id="menu-item-4937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4937"><a href="../reshenie-toe-onlajn/">Решение задач по тоэ онлайн</a></li>
+<li id="menu-item-3861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3861"><a href="../category/radiokomponenenty/">Радиокомпоненты</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../sample-page/">О сайте</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="../zadachi-s-resheniem/">Задачи с решением</a></li>
+</ul>            </nav>
+        </div>
+    </div>
+</div>
+</header>    
+
+<div class="main-container">
+  
+<div class="sidebar">
+    <nav>
+		
+
+	<details class="sidebar__details"
+	 open=""><summary class="sidebar__first">ТОЭ</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Задачи по ТОЭ</summary>                 
+				<ul><li class="sidebar__second"><a href="../zadachi-dlya-sxemy-s-posledovatelnym-soedineniem-katushki-i-kondensatorom-s-resheniem/">Задачи для схемы с последовательным соединением катушки и конденсатором с решением</a></li><li class="sidebar__second"><a href="../zadachi-s-resheniem-po-teme-nerazvetvlennye-cepi-peremennogo-toka/">Задачи с решением по теме: неразветвленные цепи переменного тока</a></li><li class="sidebar__second"><a href="../zadachi-na-posledovatelnoe-soedinenie-provodnikov/">Задачи на последовательное соединение проводников</a></li><li class="sidebar__second"><a href="../zadachi-na-parallelnoe-soedinenie-provodnikov/">Задачи на параллельное соединение проводников</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Магнитные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-magnitnogo-polya/">Основные характеристики магнитного поля</a></li><li class="sidebar__second"><a href="../magnitnyj-potok/">Магнитный поток</a></li><li class="sidebar__second"><a href="../magnitodvizhushhaya-sila-i-magnitnoe-napryazhenie/">Магнитодвижущая сила и магнитное напряжение</a></li><li class="sidebar__second"><a href="../magnitnoe-pole-provodnika-s-tokom/">Магнитное поле проводника с током</a></li><li class="sidebar__second"><a href="../zakon-polnogo-toka/">Закон полного тока</a></li><li class="sidebar__second"><a href="../magnitnaya-cep/">Магнитная цепь</a></li><li class="sidebar__second"><a href="../ferromagnitnye-materialy/">Ферромагнитные материалы</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Методы расчета цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij/">Расчёт электрической цепи постоянного тока методом узловых и контурных уравнений.</a></li><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-konturnyx-tokov/">Расчёт электрической цепи постоянного тока методом контурных токов.</a></li><li class="sidebar__second"><a href="../balans-moshhnostej-v-cepi-postoyannogo-toka/">Баланс мощностей в цепи постоянного тока</a></li><li class="sidebar__second"><a href="../metodom-nalozheniya-superpozicii-tokov/">Расчёт электрической цепи постоянного тока методом наложения (суперпозиции токов)</a></li><li class="sidebar__second"><a href="../formula-razbrosa/">Формула разброса</a></li><li class="sidebar__second"><a href="../metod-uzlovogo-napryazheniya-dvux-uzlov/">Метод узлового напряжения (двух узлов)</a></li><li class="sidebar__second"><a href="../metod-ekvivalentnogo-generatora/">Метод эквивалентного генератора</a></li><li class="sidebar__second"><a href="../metod-uzlovyx-potencialov-napryazhenij/">Метод узловых (потенциалов) напряжений</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Нелинейные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../nelinejnye-elementy-i-ix-xarakteristiki/">Нелинейные элементы и их характеристики</a></li><li class="sidebar__second"><a href="../graficheskij-raschet-nelinejnyx-elektricheskix-cepej/">Графический расчет нелинейных электрических цепей</a></li><li class="sidebar__second"><a href="../analiticheskij-metod-rascheta-nelinejnyx-elektricheskix-cepej/">Аналитический метод расчета нелинейных электрических цепей</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../istochnik_eds/">Источник ЭДС</a></li><li class="sidebar__second"><a href="../idealni_istochnik_toka/">Идеальный источник тока</a></li><li class="sidebar__second"><a href="../preobrazovanie-treugolnika-v-zvezdu-i-obratno/">Преобразование треугольника сопротивлений  в эквивалентную  звезду и обратно</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-rezistorov/">Последовательное соединение сопротивлений (резисторов)</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-soprotivlenij/">Параллельное соединение сопротивлений</a></li><li class="sidebar__second"><a href="../pervyj-i-vtoroj-zakon-kirxgofa/">Первый и второй закон Кирхгофа</a></li><li class="sidebar__second"><a href="../poterya-napryazheniya-v-provodax/">Потеря напряжения в проводах</a></li><li class="sidebar__second"><a href="../soedinenie-istochnikov-pitaniya/">Соединение источников питания</a></li></ul>
+				  </details><details class="sidebar__details-half" open=""><summary class="sidebar__half">Расчет цепей синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../yomkost-v-cepi-peremennogo-toka/">Ёмкость в цепи переменного тока</a></li><li class="sidebar__second"><a href="../induktivnost-v-cepi-peremennogo-toka/">Индуктивность в цепи переменного тока</a></li><li class="sidebar__second"><a href="../aktivnoe-soprotivlenie-v-cepi-peremennogo-toka/">Активное сопротивление в цепи переменного тока</a></li><li class="sidebar__second"><a href="../realnaya-katushka-v-cepi-peremennogo-toka/">Реальная катушка в цепи переменного тока</a></li><li class="sidebar__second"><a href="../cep-peremennogo-toka-s-kondensatorom/">Цепь переменного тока с конденсатором</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-katushki-i-kondensatora/">Последовательное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-nerazvetvlennyx-cepej-peremennogo-toka/">Расчет неразветвленных цепей переменного тока</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-katushki-i-kondensatora/">Параллельное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-cepej-s-parallelnym-soedineniem-vetvej/">Расчет цепей с параллельным соединением ветвей</a></li><li class="sidebar__second"><a href="../topograficheskaya-diagramma/">Топографическая диаграмма</a></li><li class="sidebar__second"><a class="active" href="">Символический (комплексный) метод расчета цепей переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Трёхфазные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../trexfaznye-cepi/">Трехфазные цепи</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-zvezdoj/">Соединение обмоток генератора звездой</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-treugolnikom/">Соединение обмоток генератора треугольником</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Цепи синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../koefficient-moshhnosti-chto-eto-takoe/">Коэффициент мощности, что это такое?</a></li><li class="sidebar__second"><a href="../peremennyj-sinusoidalnyj-tok-i-osnovnye-xarakterizuyushhie-ego-velichiny/">Переменный (синусоидальный) ток и основные характеризующие его величины.</a></li><li class="sidebar__second"><a href="../srednee-i-dejstvuyushhee-znacheniya-sinusoidalno-izmenyayushhejsya-velichiny/">Среднее и действующее значения синусоидально изменяющейся величины</a></li><li class="sidebar__second"><a href="../poluchenie-sinusoidalnoj-eds/">Получение синусоидальной ЭДС</a></li><li class="sidebar__second"><a href="../vektornye-diagrammy-postroenie-vektornyx-diagramm/">Векторные диаграммы. Построение векторных диаграмм</a></li><li class="sidebar__second"><a href="../napryazhenie-cepi-peremennogo-toka/">Напряжение цепи переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические цепи постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../chto-takoe-elektricheskaya-sxema-vetv-uzel-kontur/">Что такое электрическая схема, ветвь, узел, контур.</a></li><li class="sidebar__second"><a href="../elektricheskij-zaryad-napryazhenie-napryazhennost-potencial/">Электрический заряд, напряжение, напряженность, потенциал</a></li><li class="sidebar__second"><a href="../provodniki-izolyatory-i-poluprovodniki/">Проводники, изоляторы и полупроводники</a></li><li class="sidebar__second"><a href="../elektricheskij-tok-i-ego-plotnost/">Электрический ток и его плотность</a></li><li class="sidebar__second"><a href="../soprotivlenie-provodimost-i-zakon-oma/">Сопротивление, проводимость и закон Ома</a></li><li class="sidebar__second"><a href="../zavisimost-soprotivleniya-ot-temperatury/">Зависимость сопротивления от температуры</a></li><li class="sidebar__second"><a href="../preobrazovanie-elektricheskoj-energii-v-teplovuyu/">Преобразование электрической энергии в тепловую</a></li><li class="sidebar__second"><a href="../prostejshaya-elektricheskaya-cep/">Простейшая электрическая цепь</a></li><li class="sidebar__second"><a href="../elektricheskaya-cep-s-dvumya-istochnikami/">Электрическая цепь с двумя источниками</a></li><li class="sidebar__second"><a href="../potencialnaya-diagramma/">Потенциальная диаграмма</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрическое поле</summary>                 
+				<ul><li class="sidebar__second"><a href="../elektricheskoe-pole-osnovnye-xarakteristiki-polya/">Электрическое поле основные характеристики</a></li><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-elektricheskogo-toka/">Основные характеристики электрического тока</a></li><li class="sidebar__second"><a href="../zakon-kulona/">Закон Кулона</a></li><li class="sidebar__second"><a href="../teorema-gaussa/">Теорема Гаусса</a></li><li class="sidebar__second"><a href="../dielektriki-v-elektricheskom-pole/">Диэлектрики в электрическом поле</a></li><li class="sidebar__second"><a href="../vektory-polyarizovannosti-i-smeshheniya/">Векторы поляризованности и смещения</a></li></ul>
+				  </details></details>
+
+
+<!---------------------------------------------- Электрические машины ------------------------------------------------>
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Электрические машины</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины основы</summary>                 
+				<ul><li class="sidebar__second"><a href="../klassifikaciya-elektricheskix-mashin/">Классификация электрических машин</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-elektricheskix-mashin/">Режимы работы электрических машин</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины переменного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../ustrojstvo-asinxronnogo-dvigatelya-ad/">Устройство асинхронного двигателя АД</a></li><li class="sidebar__second"><a href="../sxema-upravleniya-asinxronnym-dvigatelem-s-korotkozamknutym-rotorom/">Схема управления асинхронным двигателем с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../sxema-dinamicheskogo-tormozheniya-asinxronnogo-dvigatelya-s-korotkozamknutym-rotorom/">Схема динамического торможения асинхронного двигателя с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../cxema-puska-asinxronnogo-dvigatelya-s-faznym-rotorom-funkcii-vremeni/">Схема пуска асинхронного двигателя с фазным ротором, функции времени.</a></li><li class="sidebar__second"><a href="../cxema-puska-dvigatelya-s-faznym-rotorom-funkcii-toka/">Схема пуска двигателя с фазным ротором, функции тока.</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../prichiny-iskreniya-na-kollektore-mashiny-postoyannogo-toka/">Причины искрения на коллекторе машины постоянного тока</a></li><li class="sidebar__second"><a href="../obmotki-yakorya/">Обмотки якоря</a></li><li class="sidebar__second"><a href="../osnovnye-uravneniya-dvigatelya-postoyannogo-toka-dpt/">Основные уравнения двигателя постоянного тока (ДПТ)</a></li><li class="sidebar__second"><a href="../dvigatel-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Двигатель постоянного тока независимого возбуждения (ДПТ НВ)</a></li><li class="sidebar__second"><a href="../ustrojstvo-kollektornyx-mashin-postoyannogo-toka/">Устройство коллекторных машин постоянного тока</a></li><li class="sidebar__second"><a href="../pusk-i-tormoznye-rezhimy-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Пуск и тормозные режимы двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../regulirovanie-chastoty-vrashheniya-dvigatelej-nezavisimogo-vozbuzhdeniya/">Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-dvigatelnyj-generatornyj-tormozhenie-dvigatelya-postoyannogo-toka-dpt/">Режимы работы (двигательный, генераторный, торможение) двигателя постоянного тока ДПТ</a></li><li class="sidebar__second"><a href="../dpt-posledovatelnogo-vozbuzhdeniya/">ДПТ последовательного возбуждения</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-gpt-osnovnye-ponyatiya/">Генератор постоянного тока ГПТ: основные понятия.</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-nezavisimogo-vozbuzhdeniya/">Генератор постоянного тока независимого возбуждения</a></li><li class="sidebar__second"><a href="../generator-parallelnogo-vozbuzhdeniya/">Генератор параллельного возбуждения</a></li><li class="sidebar__second"><a href="../sxemy-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-s-rezistorom/">Схемы пуска двигателя постоянного тока независимого возбуждения с резистором</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-eds/">Схема пуска двигателя постоянного тока независимого возбуждения в функции ЭДС</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-toka/">Схема пуска двигателя постоянного тока независимого возбуждения в функции тока</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-vremeni/">Схема пуска двигателя постоянного тока независимого возбуждения в функции времени</a></li></ul>
+				  </details></details>
+
+	
+	<!-------------------------------------------------------- Решение задач по ТОЭ онлайн ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Решение задач по тоэ онлайн</summary><ul>      <li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij-i-metodom-konturnyx-tokov/">Как использовать программу для расчета электрической цепи постоянного тока методом узловых и контурных уравнений, и методом контурных токов</a></li><li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskix-cepej-onlajn/">Как использовать программу для расчета электрических цепей онлайн</a></li><li class="sidebar__second"><a href="../triangle/">Треугольник сопротивлений в звезду онлайн</a></li></ul></details>
+
+
+<!-------------------------------------------------------- СПТ  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Силовая преобразовательная техника</summary><ul>      <li class="sidebar__second"><a href="../spt/">Силовая преобразовательная техника: основы</a></li><li class="sidebar__second"><a href="../poluprovodnikovie_preobrazovateli/">Полупроводниковые преобразователи</a></li><li class="sidebar__second"><a href="../p-n-perexod/">p-n переход</a></li><li class="sidebar__second"><a href="../vypryamitelnyj-diod/">Выпрямительный диод</a></li></ul></details>
+
+<!-------------------------------------------------------- Радиокомпоненты  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Радиокомпоненты</summary><ul>      <li class="sidebar__second"><a href="../kondensator/">Конденсатор</a></li><li class="sidebar__second"><a href="../kondensatory-postoyannoj-yomkosti/">Конденсаторы постоянной ёмкости</a></li></ul></details>
+    </nav>
+</div>
+ 	 <div class="content-container">
+		<main id="main" class="site-main">
+
+		
+<Article id="post-3299" class="paper__item">
+
+	<header class="header__main">
+		<h1 class="header__title header__title-h1">Символический (комплексный) метод расчета цепей переменного тока</h1>			</header><!-- .entry-header -->
+
+
+
+	<div class="paper__text">
+		<div class="paper__breadcrumbs">
+			<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/" itemprop="item"><span itemprop="name">ТОЭ</span></a><meta itemprop="position" content="1" /></span><span class="breadcrumbs__separator"> › </span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/toe/raschet-cepej-sinusoidalnogo-toka/" itemprop="item"><span itemprop="name">Расчет цепей синусоидального тока</span></a><meta itemprop="position" content="2" /></span></div><!-- .breadcrumbs -->		</div>
+		<div class="paper__commers">
+			<a href="https://edugrampromo.com/?rid=f95f92d3f61157d2&amp;promo=1" rel="nofollow">
+				<img class="paper__ads" src="../../www.hoteldelagare-palombebleue.com/appart-hotel-hendaye/author24-min.html" alt="ads"></a>
+		</div>
+
+		<p style="text-align: justify;">Одним из способов расчета цепей переменного тока является комплексный, или еще как говорят, символический метод расчета. Этот метод применяется при анализе схем с гармоническими ЭДС, напряжениями и токами. В результате решения получают комплексное значение токов и напряжений, используя для решения любые методы (эквивалентных преобразований, контурных токов, узловых потенциалов и т.п.). Но для начала<span id="more-3299"></span> необходимо иметь понятие, в каких именно формах может представляться синусоидальная величина. 1. Одна из форм представления – это вращающийся вектор (см. рис.1):</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/vector.gif"><img fetchpriority="high" decoding="async" class="alignnone wp-image-3250 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/vector.gif" alt="Вращающийся вектор" width="580" height="238"></a></p>
+<p align="center">Рис.1. Вращающийся вектор</p>
+<p style="text-align: justify;" align="left">С помощью рисунка ясно видно, как с течением времени меняется значение синусоидальной величины. В нашем случае – это величина <strong>а</strong> на графике, которая может быть, например, входным напряжением. Величина имеет некоторое начальное значение при t = 0 при <em><strong>начальной фазе φ</strong></em></p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/1.png"><img decoding="async" class="alignnone size-full wp-image-3296" src="https://energoschool.ru/wp-content/uploads/2017/06/1.png" alt="" width="450" height="32" srcset="https://energoschool.ru/wp-content/uploads/2017/06/1.png 450w, https://energoschool.ru/wp-content/uploads/2017/06/1-300x21.png 300w" sizes="(max-width: 450px) 100vw, 450px" /></a></p>
+<p style="text-align: justify;" align="left">имеет положительное максимальное значение при угле <b>ωt<sub>3</sub></b>, когда при времени <b>t<sub>3</sub></b>&nbsp;сумма <b>ωt<sub>3</sub> +&nbsp;<em><strong>φ = 90°</strong></em></b>&nbsp;и соответственно,</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/5.png"><img decoding="async" class="alignnone size-full wp-image-3289" src="https://energoschool.ru/wp-content/uploads/2017/06/5.png" alt="" width="334" height="27" srcset="https://energoschool.ru/wp-content/uploads/2017/06/5.png 334w, https://energoschool.ru/wp-content/uploads/2017/06/5-300x24.png 300w" sizes="(max-width: 334px) 100vw, 334px" /></a></p>
+<p style="text-align: justify;" align="left">имеет отрицательное максимальное значение при угле <b>ωt<sub>7</sub></b>, когда при времени <b>t<sub>7</sub></b>&nbsp;сумма углов <b>ωt<sub>7</sub> +&nbsp;<em><strong>φ = 270°&nbsp;</strong></em></b>и, соответственно,</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/9.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3304" src="https://energoschool.ru/wp-content/uploads/2017/06/9.png" alt="" width="376" height="30" srcset="https://energoschool.ru/wp-content/uploads/2017/06/9.png 376w, https://energoschool.ru/wp-content/uploads/2017/06/9-300x24.png 300w" sizes="auto, (max-width: 376px) 100vw, 376px" /></a></p>
+<p style="text-align: justify;" align="left">и имеет два нулевых значения при <b>ωt<sub>n</sub>&nbsp;+&nbsp;<em><strong>φ = 0</strong></em></b>, когда <b>ωt<sub>n</sub>&nbsp;= &#8212;<em><strong>φ </strong></em></b>(на рис.1 эта область не показана и находится слева от начала координат)</p>
+<p>и тогда</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/12.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3286" src="https://energoschool.ru/wp-content/uploads/2017/06/12.png" alt="" width="382" height="28" srcset="https://energoschool.ru/wp-content/uploads/2017/06/12.png 382w, https://energoschool.ru/wp-content/uploads/2017/06/12-300x22.png 300w" sizes="auto, (max-width: 382px) 100vw, 382px" /></a></p>
+<p style="text-align: justify;" align="left">и имеет нулевое значение при угле <b>ωt<sub>11</sub></b>, когда при времени <b>t<sub>11</sub></b>&nbsp;сумма <b>ωt<sub>11</sub> +&nbsp;<em><strong>φ = 360°</strong></em></b>&nbsp;и соответственно,</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/16.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3307" src="https://energoschool.ru/wp-content/uploads/2017/06/16.png" alt="" width="411" height="31" srcset="https://energoschool.ru/wp-content/uploads/2017/06/16.png 411w, https://energoschool.ru/wp-content/uploads/2017/06/16-300x23.png 300w" sizes="auto, (max-width: 411px) 100vw, 411px" /></a></p>
+<p style="text-align: justify;" align="left">Именно по такому закону и меняется привычное нам переменное напряжение 220 В, изменяясь по синусоидальному закону от&nbsp; значения &nbsp;0 В до максимальных 311 В и обратно.</p>
+<p style="text-align: justify;" align="left">2. Другая форма представления – <em><strong>это комплексное число</strong></em>. Чтобы представить ранее рассмотренную форму представления синусоидальной величины, которая имеет некоторую начальную фазу φ, создают комплексную плоскость в виде графика зависимости двух величин (рис.2)</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/kompleksnaya_ploskostpng.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3308 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/kompleksnaya_ploskostpng.png" alt="Комплексное число на комплексной плоскости" width="388" height="208" srcset="https://energoschool.ru/wp-content/uploads/2017/06/kompleksnaya_ploskostpng.png 388w, https://energoschool.ru/wp-content/uploads/2017/06/kompleksnaya_ploskostpng-300x161.png 300w" sizes="auto, (max-width: 388px) 100vw, 388px" /></a></p>
+<p align="center">Рис.2. Комплексное число на комплексной плоскости</p>
+<p style="text-align: justify;" align="left">Длина вектора Am на такой комплексной плоскости равна амплитуде (максимальному значению) рассматриваемой величины. С учетом начальной фазы <em><strong>φ</strong></em>&nbsp;такое число записывают как <a href="https://energoschool.ru/wp-content/uploads/2017/06/17.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3284" src="https://energoschool.ru/wp-content/uploads/2017/06/17.png" alt="" width="116" height="24"></a>.</p>
+<p style="text-align: justify;" align="left">На практике при использовании для расчетов символического (комплексного) метода расчета используют для некоторых удобств не амплитудное значение величины, а так называемое действующее значение. Его величина в корень из двух раз меньше амплитудного и обозначается без индекса m, т.е. равна</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/18.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3283 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/18.png" alt="действующее значение" width="140" height="53"></a></p>
+<p style="text-align: justify;" align="left">На рисунке выше этот вектор также показан.<br />
+Например, при том же нашем напряжении в сети, максимальное значение синусоидально изменяющегося напряжения равно 311 В, а действующее значение, к значению которого мы привыкли</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/19.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3282 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/19.png" alt="Действующее значение напряжения" width="198" height="54"></a></p>
+<p style="text-align: justify;" align="left">При работе с комплексными числами и расчетов применяют различные формы записи комплексного числа. Например, при сложении комплексных чисел удобнее использовать алгебраическую форму записи таких чисел, а при умножении или делении – показательную форму записи. В некоторых случаях пишут тригонометрическую форму.<br />
+Итак, три формы записи комплексного числа:</p>
+<p>1) показательная форма в виде</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/20.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3281 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/20.png" alt="Показательная форма комплексного числа" width="90" height="27"></a></p>
+<p align="left">2) тригонометрическая форма в виде</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/21.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3309 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/21.png" alt="Тригонометрическая форма комплексного числа" width="222" height="28"></a></p>
+<p align="left">3) алгебраическая форма</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/22.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3310 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/22.png" alt="Алгебраическая форма комплексного числа" width="153" height="25" srcset="https://energoschool.ru/wp-content/uploads/2017/06/22.png 153w, https://energoschool.ru/wp-content/uploads/2017/06/22-150x25.png 150w" sizes="auto, (max-width: 153px) 100vw, 153px" /></a></p>
+<p style="text-align: justify;" align="left">где ReA&nbsp;&#8212; это действительная составляющая комплексного числа, ImA&nbsp;&#8212; мнимая составляющая.</p>
+<p align="left">Например, имеем комплексное число в показательной форме вида</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/25.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3280" src="https://energoschool.ru/wp-content/uploads/2017/06/25.png" alt="" width="96" height="23"></a></p>
+<p align="left">в тригонометрической форме записи это запишется как</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/26.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3279" src="https://energoschool.ru/wp-content/uploads/2017/06/26.png" alt="" width="246" height="28"></a></p>
+<p style="text-align: justify;" align="left">при подсчете получим число, плавно переходящее в алгебраическую форму с учетом того, что</p>
+<p align="left"><a href="https://energoschool.ru/wp-content/uploads/2017/06/27.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3278" src="https://energoschool.ru/wp-content/uploads/2017/06/27.png" alt="" width="258" height="23"></a></p>
+<p align="left"><a href="https://energoschool.ru/wp-content/uploads/2017/06/28.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3277" src="https://energoschool.ru/wp-content/uploads/2017/06/28.png" alt="" width="225" height="19"></a></p>
+<p style="text-align: justify;" align="left">В итоге получим</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/29.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3315" src="https://energoschool.ru/wp-content/uploads/2017/06/29.png" alt="" width="349" height="34" srcset="https://energoschool.ru/wp-content/uploads/2017/06/29.png 349w, https://energoschool.ru/wp-content/uploads/2017/06/29-300x29.png 300w" sizes="auto, (max-width: 349px) 100vw, 349px" /></a></p>
+<p align="left">где <a href="https://energoschool.ru/wp-content/uploads/2017/06/30.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3316" src="https://energoschool.ru/wp-content/uploads/2017/06/30.png" alt="" width="175" height="26"></a></p>
+<p style="text-align: justify;" align="left">При переходе от алгебраической формы к показательной комплексное число вида</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/31.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3313" src="https://energoschool.ru/wp-content/uploads/2017/06/31.png" alt="" width="116" height="29"></a></p>
+<p align="left">переходит к показательному виду &nbsp;по следующим преобразованиям</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/32.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3314" src="https://energoschool.ru/wp-content/uploads/2017/06/32.png" alt="" width="334" height="30" srcset="https://energoschool.ru/wp-content/uploads/2017/06/32.png 334w, https://energoschool.ru/wp-content/uploads/2017/06/32-300x27.png 300w" sizes="auto, (max-width: 334px) 100vw, 334px" /></a></p>
+<p align="left">а угол</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/33.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3276" src="https://energoschool.ru/wp-content/uploads/2017/06/33.png" alt="" width="429" height="54" srcset="https://energoschool.ru/wp-content/uploads/2017/06/33.png 429w, https://energoschool.ru/wp-content/uploads/2017/06/33-300x38.png 300w" sizes="auto, (max-width: 429px) 100vw, 429px" /></a></p>
+<p align="left">Таким образом, и получим</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/34.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3275" src="https://energoschool.ru/wp-content/uploads/2017/06/34.png" alt="" width="180" height="32"></a></p>
+<p style="text-align: justify;" align="left">Перейдем к рассмотрению несложных примеров использования&nbsp; символического, или по-другому, комплексного метода расчета электрических цепей. Составим небольшой алгоритм комплексного метода:</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>
+<li style="list-style-type: none;">
+<ul>
+<li style="text-align: justify;">Составить комплексную схему, заменяя мгновенные значения ЭДС, напряжений и токов их комплексным видом</li>
+<li style="text-align: justify;">В полученной схеме произвольно выбирают направления токов в ветвях и обозначают их на схеме.</li>
+<li style="text-align: justify;">При необходимости составляют комплексные уравнения по выбранному методу решения.</li>
+<li style="text-align: justify;">Решают уравнения относительно комплексного значения искомой величины.</li>
+<li style="text-align: justify;">Если требуется, записывают мгновенные значения найденных комплексных величин.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<p style="text-align: justify;"><em><u>Пример 1. </u></em>В схеме рис.3 закон изменения ЭДС <em><strong>e = 141sin*ωt</strong></em>. Сопротивления R1 = 3 Ом, R2 = 2 Ом, L = 38,22 мГн, С = 1061,6 мкФ. Частота f = 50 Гц. Решить символическим методом. Найти ток и напряжения на элементах. Проверить 2-ой закон Кирхгофа для цепи.</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/рис3.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3318 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/рис3.png" alt="Схема с последовательным соединением элементов" width="283" height="98"></a></p>
+<p align="center">Рис.3. Схема с последовательным соединением элементов</p>
+<p style="text-align: justify;" align="left">Составляем комплексную схему, обозначив комплексные токи и напряжения (рис.4):</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/рис4.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3319 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/рис4.png" alt="Схема с комплексными обозначениями" width="283" height="98"></a></p>
+<p align="center">Рис.4. Схема с комплексными обозначениями</p>
+<p align="left">По закону Ома ток в цепи равен</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/36.png"><img loading="lazy" decoding="async" class="alignnone wp-image-3273 size-full" src="https://energoschool.ru/wp-content/uploads/2017/06/36.png" alt="Закон ома в комплексной форме" width="49" height="55"></a></p>
+<p style="text-align: justify;" align="left">где U &#8212; комплексное входное напряжение, Z &#8212; полное сопротивление всей цепи. Комплекс входного напряжения находим как</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/37.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3320" src="https://energoschool.ru/wp-content/uploads/2017/06/37.png" alt="" width="301" height="57" srcset="https://energoschool.ru/wp-content/uploads/2017/06/37.png 301w, https://energoschool.ru/wp-content/uploads/2017/06/37-300x57.png 300w" sizes="auto, (max-width: 301px) 100vw, 301px" /></a></p>
+<p style="text-align: justify;" align="left"><em>Пояснение: здесь начальная фаза</em> <b>&nbsp;</b>φ = 0°, <em>так как &nbsp;общее выражение для мгновенного значения напряжение вида</em> <a href="https://energoschool.ru/wp-content/uploads/2017/06/39.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3322" src="https://energoschool.ru/wp-content/uploads/2017/06/39.png" alt="" width="175" height="24"></a>при<strong> &nbsp;</strong>φ = 0°&nbsp;<em>равно</em></p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/40.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3323" src="https://energoschool.ru/wp-content/uploads/2017/06/40.png" alt="" width="463" height="28" srcset="https://energoschool.ru/wp-content/uploads/2017/06/40.png 463w, https://energoschool.ru/wp-content/uploads/2017/06/40-300x18.png 300w" sizes="auto, (max-width: 463px) 100vw, 463px" /></a></p>
+<p style="text-align: justify;" align="left">Со<em>ответственно, комплекс входного напряжения в показательной форме запишется как</em></p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/41.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3272" src="https://energoschool.ru/wp-content/uploads/2017/06/41.png" alt="" width="467" height="55" srcset="https://energoschool.ru/wp-content/uploads/2017/06/41.png 467w, https://energoschool.ru/wp-content/uploads/2017/06/41-300x35.png 300w" sizes="auto, (max-width: 467px) 100vw, 467px" /></a></p>
+<p style="text-align: justify;" align="left">Полное комплексное сопротивление цепи в общем виде</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/42.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3271" src="https://energoschool.ru/wp-content/uploads/2017/06/42.png" alt="" width="252" height="51"></a></p>
+<p style="text-align: justify;" align="left">Находим комплексное сопротивление индуктивности</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/43.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3270" src="https://energoschool.ru/wp-content/uploads/2017/06/43.png" alt="" width="582" height="27" srcset="https://energoschool.ru/wp-content/uploads/2017/06/43.png 582w, https://energoschool.ru/wp-content/uploads/2017/06/43-300x14.png 300w" sizes="auto, (max-width: 582px) 100vw, 582px" /></a></p>
+<p align="left">Находим комплексное сопротивление емкости</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/44.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3269" src="https://energoschool.ru/wp-content/uploads/2017/06/44.png" alt="" width="628" height="54" srcset="https://energoschool.ru/wp-content/uploads/2017/06/44.png 628w, https://energoschool.ru/wp-content/uploads/2017/06/44-300x26.png 300w" sizes="auto, (max-width: 628px) 100vw, 628px" /></a></p>
+<p align="left">Соответственно, общее комплексное сопротивление цепи</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/45.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3327" src="https://energoschool.ru/wp-content/uploads/2017/06/45.png" alt="" width="482" height="80" srcset="https://energoschool.ru/wp-content/uploads/2017/06/45.png 482w, https://energoschool.ru/wp-content/uploads/2017/06/45-300x50.png 300w" sizes="auto, (max-width: 482px) 100vw, 482px" /></a></p>
+<p align="left">Ток в цепи</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/46.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3326" src="https://energoschool.ru/wp-content/uploads/2017/06/46.png" alt="" width="493" height="59" srcset="https://energoschool.ru/wp-content/uploads/2017/06/46.png 493w, https://energoschool.ru/wp-content/uploads/2017/06/46-300x36.png 300w" sizes="auto, (max-width: 493px) 100vw, 493px" /></a></p>
+<p align="left">Комплексные напряжения на элементах</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/47.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3324" src="https://energoschool.ru/wp-content/uploads/2017/06/47.png" alt="" width="594" height="222" srcset="https://energoschool.ru/wp-content/uploads/2017/06/47.png 594w, https://energoschool.ru/wp-content/uploads/2017/06/47-300x112.png 300w" sizes="auto, (max-width: 594px) 100vw, 594px" /></a></p>
+<p style="text-align: justify;" align="left">Проверяем второй закон Кирхгофа для замкнутого контура, т.е. должно выполняться равенство <a href="https://energoschool.ru/wp-content/uploads/2017/06/48.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3325" src="https://energoschool.ru/wp-content/uploads/2017/06/48.png" alt="" width="205" height="32"></a></p>
+<p align="left">Проверяем</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/49.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3268" src="https://energoschool.ru/wp-content/uploads/2017/06/49.png" alt="" width="606" height="53" srcset="https://energoschool.ru/wp-content/uploads/2017/06/49.png 606w, https://energoschool.ru/wp-content/uploads/2017/06/49-300x26.png 300w" sizes="auto, (max-width: 606px) 100vw, 606px" /></a></p>
+<p style="text-align: justify;" align="left">С небольшим расхождением из-за округлений промежуточных вычислений всё верно.</p>
+<p style="text-align: justify;"><em><u>Пример 2.</u></em><u> </u>В электрической цепи (рис.5) однофазного синусоидального тока, схема и параметры элементов которой заданы для каждого варианта в таблице, определить:<br />
+1)&nbsp; полное сопротивление электрической цепи и его характер;<br />
+2)&nbsp; действующие значения токов в ветвях;<br />
+3) показания вольтметра и ваттметра;</p>
+<ol>
+<li style="list-style-type: none;">
+<ol>Исходные данные: Е = 220 В, f = 50 Гц, L1 = 38,2 мГн, R2 = 6 Ом, С2 = 318 мкФ, L2 = 47,7 мГн, R3 = 10 Ом, С3 = 300 мкФ.</ol>
+</li>
+</ol>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/рис5.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3267" src="https://energoschool.ru/wp-content/uploads/2017/06/рис5.png" alt="" width="417" height="254" srcset="https://energoschool.ru/wp-content/uploads/2017/06/рис5.png 417w, https://energoschool.ru/wp-content/uploads/2017/06/рис5-300x183.png 300w" sizes="auto, (max-width: 417px) 100vw, 417px" /></a></p>
+<p align="center">Рис.5.Цепь однофвзного синусоидального тока</p>
+<p>Решение:<br />
+1.&nbsp; Находим комплексные сопротивления ветвей и всей цепи:<br />
+Учитываем, что</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/50.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3266" src="https://energoschool.ru/wp-content/uploads/2017/06/50.png" alt="" width="412" height="51" srcset="https://energoschool.ru/wp-content/uploads/2017/06/50.png 412w, https://energoschool.ru/wp-content/uploads/2017/06/50-300x37.png 300w" sizes="auto, (max-width: 412px) 100vw, 412px" /></a></p>
+<p align="left">Комплексное сопротивление первой ветви:</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/51.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3265" src="https://energoschool.ru/wp-content/uploads/2017/06/51.png" alt="" width="443" height="27" srcset="https://energoschool.ru/wp-content/uploads/2017/06/51.png 443w, https://energoschool.ru/wp-content/uploads/2017/06/51-300x18.png 300w" sizes="auto, (max-width: 443px) 100vw, 443px" /></a></p>
+<p align="left">Комплексное сопротивление второй ветви:</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/52.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3330" src="https://energoschool.ru/wp-content/uploads/2017/06/52.png" alt="" width="618" height="132" srcset="https://energoschool.ru/wp-content/uploads/2017/06/52.png 618w, https://energoschool.ru/wp-content/uploads/2017/06/52-300x64.png 300w" sizes="auto, (max-width: 618px) 100vw, 618px" /></a></p>
+<p align="left">Комплексное сопротивление третьей ветви:</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/53.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3331" src="https://energoschool.ru/wp-content/uploads/2017/06/53.png" alt="" width="626" height="56" srcset="https://energoschool.ru/wp-content/uploads/2017/06/53.png 626w, https://energoschool.ru/wp-content/uploads/2017/06/53-300x27.png 300w" sizes="auto, (max-width: 626px) 100vw, 626px" /></a></p>
+<p align="left">Общее сопротивление цепи</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/54.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3328" src="https://energoschool.ru/wp-content/uploads/2017/06/54.png" alt="" width="615" height="186" srcset="https://energoschool.ru/wp-content/uploads/2017/06/54.png 615w, https://energoschool.ru/wp-content/uploads/2017/06/54-300x91.png 300w" sizes="auto, (max-width: 615px) 100vw, 615px" /></a></p>
+<p align="left">Откуда</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/55.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3329" src="https://energoschool.ru/wp-content/uploads/2017/06/55.png" alt="" width="531" height="27" srcset="https://energoschool.ru/wp-content/uploads/2017/06/55.png 531w, https://energoschool.ru/wp-content/uploads/2017/06/55-300x15.png 300w" sizes="auto, (max-width: 531px) 100vw, 531px" /></a></p>
+<p align="left"><a href="https://energoschool.ru/wp-content/uploads/2017/06/56.png"><img loading="lazy" decoding="async" class="size-full wp-image-3264 alignleft" src="https://energoschool.ru/wp-content/uploads/2017/06/56.png" alt="" width="108" height="24"></a>&#8212; нагрузка носит активно-индуктивный характер</p>
+<p align="left">2. Находим действующие значения токов в ветвях:</p>
+<div align="center">&nbsp;</div>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/рис6.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3332" src="https://energoschool.ru/wp-content/uploads/2017/06/рис6.png" alt="" width="417" height="254" srcset="https://energoschool.ru/wp-content/uploads/2017/06/рис6.png 417w, https://energoschool.ru/wp-content/uploads/2017/06/рис6-300x183.png 300w" sizes="auto, (max-width: 417px) 100vw, 417px" /></a></p>
+<p align="center">Рис.6. Схема с обозначенными комплексными токами</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/57.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3263" src="https://energoschool.ru/wp-content/uploads/2017/06/57.png" alt="" width="528" height="325" srcset="https://energoschool.ru/wp-content/uploads/2017/06/57.png 528w, https://energoschool.ru/wp-content/uploads/2017/06/57-300x185.png 300w" sizes="auto, (max-width: 528px) 100vw, 528px" /></a></p>
+<p>Действующие значения, соответственно,</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/58.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3262" src="https://energoschool.ru/wp-content/uploads/2017/06/58.png" alt="" width="361" height="25" srcset="https://energoschool.ru/wp-content/uploads/2017/06/58.png 361w, https://energoschool.ru/wp-content/uploads/2017/06/58-300x21.png 300w" sizes="auto, (max-width: 361px) 100vw, 361px" /></a></p>
+<p style="text-align: justify;">3. Определим показания приборов:<br />
+Вольтметр подключен по схеме параллельно источнику питания. Соответственно его показание равно:<br />
+U=220 В<br />
+Ваттметр включен токовой обмоткой в разрыв третьей ветви, а обмоткой напряжения также к выводам третьей ветви, измеряя, таким образом,&nbsp; активную мощность третьей ветви. Эта мощность равна мощности на сопротивлении R3. Его показания:</p>
+<p align="center"><a href="https://energoschool.ru/wp-content/uploads/2017/06/59.png"><img loading="lazy" decoding="async" class="alignnone size-full wp-image-3261" src="https://energoschool.ru/wp-content/uploads/2017/06/59.png" alt="" width="303" height="26" srcset="https://energoschool.ru/wp-content/uploads/2017/06/59.png 303w, https://energoschool.ru/wp-content/uploads/2017/06/59-300x26.png 300w" sizes="auto, (max-width: 303px) 100vw, 303px" /></a></p>
+	</div><!-- .entry-content -->
+	</Article>
+
+
+	<footer class="paper__footer entry-footer">
+
+            <div class="paper__link"></div>
+            <div class="paper__link"><span class="icon-price-tag"></span>
+			<a href="../tag/zadachi-s-resheniem/" rel="tag">Задачи с решением</a>,<a href="../tag/reshenie-zadach-po-toe/" rel="tag">Решение задач по ТОЭ</a>,<a href="../tag/simvolicheskij-metod/" rel="tag">Символический метод</a>,<a href="../tag/toe/" rel="tag">ТОЭ</a>			</div>
+            <div class="paper__link"><span class="icon-folder-open"></span>
+			<a href="../category/toe/raschet-cepej-sinusoidalnogo-toka/" rel="category tag">Расчет цепей синусоидального тока</a>			</div>
+			<div class="paper__link">
+						</div>
+    </footer>
+
+
+<!-- #post-3299 -->
+
+		</main><!-- #main -->
+	<footer>
+    <div class="container">
+        <div class="footer__content">
+                © energoschool.ru 2026 – All Right Reserved
+                <a class="footer__link" href="https://energoschool.ru/sample-page/">О сайте</a>
+        </div>    
+        
+    </div>
+</footer>	</div>
+
+    <div class="promo">
+  </div>
+
+
+</div>
+
+<script type="text/javascript" defer src="https://energoschool.ru/wp-content/themes/electrikam2020/js/script.js" id="electrikam-scripts-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/navigation.js?ver=20151215" id="electrikam2020-navigation-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/skip-link-focus-fix.js?ver=20151215" id="electrikam2020-skip-link-focus-fix-js"></script>

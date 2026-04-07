@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+
+
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ | energoschool</title>
+<meta name='robots' content='max-image-preview:large' />
+
+<!-- All In One SEO Pack 3.7.0ob_start_detected [-1,-1] -->
+<meta name="description"  content="Способы регулирования частоты вращения двигателей оцени­ваются следующими показателями: плавностью регулирования; диапазоном регулирования, определяемым" />
+
+<meta name="keywords"  content="Двигатель постоянного тока,ДПТ НВ,Машины постоянного тока,Электрические машины" />
+
+
+
+
+
+
+<link rel='stylesheet' id='electrikam-style-css' href='https://energoschool.ru/wp-content/themes/electrikam2020/style.css?ver=6.9.1' type='text/css' media='all' />
+
+
+
+<link rel="icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://energoschool.ru/wp-content/uploads/2017/12/cropped-Favicon-270x270.jpg" />
+
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=106905110', 'ym');
+
+    ym(106905110, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/106905110" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+    <body>
+
+<header>
+    <div class="container">
+        <div class="header">
+        <nav class="header__nav">
+            <!-- <a class="header__logo" href="https://energoschool.ru">energoschool</a> -->				
+            						<p class="header__logo-block"><a class="header__logo" href="../" rel="home">energoschool</a></p>
+					            <ul class="header__menu">
+            <li class="menu__item"><a class="menu__link" href="../toe/">ТОЭ</a></li>
+            <li class="menu__item"><a class="menu__link" href="../elektricheskie-mashiny/">Электрические машины</a></li>
+            <li class="menu__item">Решение задач
+                <div class="header__dropdown">
+                    <a href="../reshenie-toe-onlajn/" class="header__dropdown-item">Решение задач по ТОЭ онлайн</a>
+                    <a href="../zadachi-s-resheniem/" class="header__dropdown-item">Задачи с решением</a>
+                </div>
+            </li>
+            <li class="menu__item">Ещё +
+                <div class="header__dropdown">
+                    <a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/" class="header__dropdown-item">СПТ</a>
+                    <a href="../category/radiokomponenenty/" class="header__dropdown-item">Радиокоипоненты</a>
+                    <a href="../sample-page/" class="header__dropdown-item">О сайте</a>
+                </div>
+            </li>     
+        </ul>
+            
+            <div class="header__social"></div>
+
+            <form class="search__form-desctop" role="search" method="get"  action="https://energoschool.ru/" >
+	<input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s"  />
+    <button class="search__button" type="submit" ><span class="icon-search"></span></button>
+</form>        
+
+            <div class="header__button">
+                <div class="header__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__search">
+                    <span class="icon-search"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav">
+            <nav class="nav__wrapper">
+            <form class="search__form" role="search" method="get" id="searchform" action="https://energoschool.ru/">
+    <input class="search__input" placeholder="Поиск..." aria-label="Search" type="text" value="" name="s" id="s">
+    <button class="search__button" type="submit" id="searchsubmit"><span class="icon-search"></span></button>
+</form>
+
+                <ul><li id="menu-item-85" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-85"><a href="../">Главная</a></li>
+<li id="menu-item-2770" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2770"><a href="../toe/">ТОЭ</a></li>
+<li id="menu-item-2774" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2774"><a href="../elektricheskie-mashiny/">ЭЛЕКТРИЧЕСКИЕ МАШИНЫ</a></li>
+<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="../category/%d1%81%d0%b8%d0%bb%d0%be%d0%b2%d0%b0%d1%8f-%d0%bf%d1%80%d0%b5%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d0%b0%d1%8f-%d1%82%d0%b5%d1%85%d0%bd%d0%b8%d0%ba%d0%b0/">СПТ</a></li>
+<li id="menu-item-4937" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4937"><a href="../reshenie-toe-onlajn/">Решение задач по тоэ онлайн</a></li>
+<li id="menu-item-3861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3861"><a href="../category/radiokomponenenty/">Радиокомпоненты</a></li>
+<li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86"><a href="../sample-page/">О сайте</a></li>
+<li id="menu-item-3947" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3947"><a href="../zadachi-s-resheniem/">Задачи с решением</a></li>
+</ul>            </nav>
+        </div>
+    </div>
+</div>
+</header>    
+
+<div class="main-container">
+  
+<div class="sidebar">
+    <nav>
+		
+
+	<details class="sidebar__details"
+	><summary class="sidebar__first">ТОЭ</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Задачи по ТОЭ</summary>                 
+				<ul><li class="sidebar__second"><a href="../zadachi-dlya-sxemy-s-posledovatelnym-soedineniem-katushki-i-kondensatorom-s-resheniem/">Задачи для схемы с последовательным соединением катушки и конденсатором с решением</a></li><li class="sidebar__second"><a href="../zadachi-s-resheniem-po-teme-nerazvetvlennye-cepi-peremennogo-toka/">Задачи с решением по теме: неразветвленные цепи переменного тока</a></li><li class="sidebar__second"><a href="../zadachi-na-posledovatelnoe-soedinenie-provodnikov/">Задачи на последовательное соединение проводников</a></li><li class="sidebar__second"><a href="../zadachi-na-parallelnoe-soedinenie-provodnikov/">Задачи на параллельное соединение проводников</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Магнитные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-magnitnogo-polya/">Основные характеристики магнитного поля</a></li><li class="sidebar__second"><a href="../magnitnyj-potok/">Магнитный поток</a></li><li class="sidebar__second"><a href="../magnitodvizhushhaya-sila-i-magnitnoe-napryazhenie/">Магнитодвижущая сила и магнитное напряжение</a></li><li class="sidebar__second"><a href="../magnitnoe-pole-provodnika-s-tokom/">Магнитное поле проводника с током</a></li><li class="sidebar__second"><a href="../zakon-polnogo-toka/">Закон полного тока</a></li><li class="sidebar__second"><a href="../magnitnaya-cep/">Магнитная цепь</a></li><li class="sidebar__second"><a href="../ferromagnitnye-materialy/">Ферромагнитные материалы</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Методы расчета цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij/">Расчёт электрической цепи постоянного тока методом узловых и контурных уравнений.</a></li><li class="sidebar__second"><a href="../raschyot-elektricheskoj-cepi-postoyannogo-toka-metodom-konturnyx-tokov/">Расчёт электрической цепи постоянного тока методом контурных токов.</a></li><li class="sidebar__second"><a href="../balans-moshhnostej-v-cepi-postoyannogo-toka/">Баланс мощностей в цепи постоянного тока</a></li><li class="sidebar__second"><a href="../metodom-nalozheniya-superpozicii-tokov/">Расчёт электрической цепи постоянного тока методом наложения (суперпозиции токов)</a></li><li class="sidebar__second"><a href="../formula-razbrosa/">Формула разброса</a></li><li class="sidebar__second"><a href="../metod-uzlovogo-napryazheniya-dvux-uzlov/">Метод узлового напряжения (двух узлов)</a></li><li class="sidebar__second"><a href="../metod-ekvivalentnogo-generatora/">Метод эквивалентного генератора</a></li><li class="sidebar__second"><a href="../metod-uzlovyx-potencialov-napryazhenij/">Метод узловых (потенциалов) напряжений</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Нелинейные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../nelinejnye-elementy-i-ix-xarakteristiki/">Нелинейные элементы и их характеристики</a></li><li class="sidebar__second"><a href="../graficheskij-raschet-nelinejnyx-elektricheskix-cepej/">Графический расчет нелинейных электрических цепей</a></li><li class="sidebar__second"><a href="../analiticheskij-metod-rascheta-nelinejnyx-elektricheskix-cepej/">Аналитический метод расчета нелинейных электрических цепей</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../istochnik_eds/">Источник ЭДС</a></li><li class="sidebar__second"><a href="../idealni_istochnik_toka/">Идеальный источник тока</a></li><li class="sidebar__second"><a href="../preobrazovanie-treugolnika-v-zvezdu-i-obratno/">Преобразование треугольника сопротивлений  в эквивалентную  звезду и обратно</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-rezistorov/">Последовательное соединение сопротивлений (резисторов)</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-soprotivlenij/">Параллельное соединение сопротивлений</a></li><li class="sidebar__second"><a href="../pervyj-i-vtoroj-zakon-kirxgofa/">Первый и второй закон Кирхгофа</a></li><li class="sidebar__second"><a href="../poterya-napryazheniya-v-provodax/">Потеря напряжения в проводах</a></li><li class="sidebar__second"><a href="../soedinenie-istochnikov-pitaniya/">Соединение источников питания</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Расчет цепей синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../yomkost-v-cepi-peremennogo-toka/">Ёмкость в цепи переменного тока</a></li><li class="sidebar__second"><a href="../induktivnost-v-cepi-peremennogo-toka/">Индуктивность в цепи переменного тока</a></li><li class="sidebar__second"><a href="../aktivnoe-soprotivlenie-v-cepi-peremennogo-toka/">Активное сопротивление в цепи переменного тока</a></li><li class="sidebar__second"><a href="../realnaya-katushka-v-cepi-peremennogo-toka/">Реальная катушка в цепи переменного тока</a></li><li class="sidebar__second"><a href="../cep-peremennogo-toka-s-kondensatorom/">Цепь переменного тока с конденсатором</a></li><li class="sidebar__second"><a href="../posledovatelnoe-soedinenie-katushki-i-kondensatora/">Последовательное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-nerazvetvlennyx-cepej-peremennogo-toka/">Расчет неразветвленных цепей переменного тока</a></li><li class="sidebar__second"><a href="../parallelnoe-soedinenie-katushki-i-kondensatora/">Параллельное соединение катушки и конденсатора</a></li><li class="sidebar__second"><a href="../raschet-cepej-s-parallelnym-soedineniem-vetvej/">Расчет цепей с параллельным соединением ветвей</a></li><li class="sidebar__second"><a href="../topograficheskaya-diagramma/">Топографическая диаграмма</a></li><li class="sidebar__second"><a href="../simvolicheskij-kompleksnyj-metod-rascheta-cepej-peremennogo-toka/">Символический (комплексный) метод расчета цепей переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Трёхфазные цепи</summary>                 
+				<ul><li class="sidebar__second"><a href="../trexfaznye-cepi/">Трехфазные цепи</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-zvezdoj/">Соединение обмоток генератора звездой</a></li><li class="sidebar__second"><a href="../soedinenie-obmotok-generatora-treugolnikom/">Соединение обмоток генератора треугольником</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Цепи синусоидального тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../koefficient-moshhnosti-chto-eto-takoe/">Коэффициент мощности, что это такое?</a></li><li class="sidebar__second"><a href="../peremennyj-sinusoidalnyj-tok-i-osnovnye-xarakterizuyushhie-ego-velichiny/">Переменный (синусоидальный) ток и основные характеризующие его величины.</a></li><li class="sidebar__second"><a href="../srednee-i-dejstvuyushhee-znacheniya-sinusoidalno-izmenyayushhejsya-velichiny/">Среднее и действующее значения синусоидально изменяющейся величины</a></li><li class="sidebar__second"><a href="../poluchenie-sinusoidalnoj-eds/">Получение синусоидальной ЭДС</a></li><li class="sidebar__second"><a href="../vektornye-diagrammy-postroenie-vektornyx-diagramm/">Векторные диаграммы. Построение векторных диаграмм</a></li><li class="sidebar__second"><a href="../napryazhenie-cepi-peremennogo-toka/">Напряжение цепи переменного тока</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические цепи постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../chto-takoe-elektricheskaya-sxema-vetv-uzel-kontur/">Что такое электрическая схема, ветвь, узел, контур.</a></li><li class="sidebar__second"><a href="../elektricheskij-zaryad-napryazhenie-napryazhennost-potencial/">Электрический заряд, напряжение, напряженность, потенциал</a></li><li class="sidebar__second"><a href="../provodniki-izolyatory-i-poluprovodniki/">Проводники, изоляторы и полупроводники</a></li><li class="sidebar__second"><a href="../elektricheskij-tok-i-ego-plotnost/">Электрический ток и его плотность</a></li><li class="sidebar__second"><a href="../soprotivlenie-provodimost-i-zakon-oma/">Сопротивление, проводимость и закон Ома</a></li><li class="sidebar__second"><a href="../zavisimost-soprotivleniya-ot-temperatury/">Зависимость сопротивления от температуры</a></li><li class="sidebar__second"><a href="../preobrazovanie-elektricheskoj-energii-v-teplovuyu/">Преобразование электрической энергии в тепловую</a></li><li class="sidebar__second"><a href="../prostejshaya-elektricheskaya-cep/">Простейшая электрическая цепь</a></li><li class="sidebar__second"><a href="../elektricheskaya-cep-s-dvumya-istochnikami/">Электрическая цепь с двумя источниками</a></li><li class="sidebar__second"><a href="../potencialnaya-diagramma/">Потенциальная диаграмма</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрическое поле</summary>                 
+				<ul><li class="sidebar__second"><a href="../elektricheskoe-pole-osnovnye-xarakteristiki-polya/">Электрическое поле основные характеристики</a></li><li class="sidebar__second"><a href="../osnovnye-xarakteristiki-elektricheskogo-toka/">Основные характеристики электрического тока</a></li><li class="sidebar__second"><a href="../zakon-kulona/">Закон Кулона</a></li><li class="sidebar__second"><a href="../teorema-gaussa/">Теорема Гаусса</a></li><li class="sidebar__second"><a href="../dielektriki-v-elektricheskom-pole/">Диэлектрики в электрическом поле</a></li><li class="sidebar__second"><a href="../vektory-polyarizovannosti-i-smeshheniya/">Векторы поляризованности и смещения</a></li></ul>
+				  </details></details>
+
+
+<!---------------------------------------------- Электрические машины ------------------------------------------------>
+
+
+<details class="sidebar__details"
+	 open=""><summary class="sidebar__first">Электрические машины</summary>      <details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины основы</summary>                 
+				<ul><li class="sidebar__second"><a href="../klassifikaciya-elektricheskix-mashin/">Классификация электрических машин</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-elektricheskix-mashin/">Режимы работы электрических машин</a></li></ul>
+				  </details><details class="sidebar__details-half"><summary class="sidebar__half">Электрические машины переменного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../ustrojstvo-asinxronnogo-dvigatelya-ad/">Устройство асинхронного двигателя АД</a></li><li class="sidebar__second"><a href="../sxema-upravleniya-asinxronnym-dvigatelem-s-korotkozamknutym-rotorom/">Схема управления асинхронным двигателем с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../sxema-dinamicheskogo-tormozheniya-asinxronnogo-dvigatelya-s-korotkozamknutym-rotorom/">Схема динамического торможения асинхронного двигателя с короткозамкнутым ротором</a></li><li class="sidebar__second"><a href="../cxema-puska-asinxronnogo-dvigatelya-s-faznym-rotorom-funkcii-vremeni/">Схема пуска асинхронного двигателя с фазным ротором, функции времени.</a></li><li class="sidebar__second"><a href="../cxema-puska-dvigatelya-s-faznym-rotorom-funkcii-toka/">Схема пуска двигателя с фазным ротором, функции тока.</a></li></ul>
+				  </details><details class="sidebar__details-half" open=""><summary class="sidebar__half">Электрические машины постоянного тока</summary>                 
+				<ul><li class="sidebar__second"><a href="../prichiny-iskreniya-na-kollektore-mashiny-postoyannogo-toka/">Причины искрения на коллекторе машины постоянного тока</a></li><li class="sidebar__second"><a href="../obmotki-yakorya/">Обмотки якоря</a></li><li class="sidebar__second"><a href="../osnovnye-uravneniya-dvigatelya-postoyannogo-toka-dpt/">Основные уравнения двигателя постоянного тока (ДПТ)</a></li><li class="sidebar__second"><a href="../dvigatel-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Двигатель постоянного тока независимого возбуждения (ДПТ НВ)</a></li><li class="sidebar__second"><a href="../ustrojstvo-kollektornyx-mashin-postoyannogo-toka/">Устройство коллекторных машин постоянного тока</a></li><li class="sidebar__second"><a href="../pusk-i-tormoznye-rezhimy-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-dpt-nv/">Пуск и тормозные режимы двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a class="active" href="">Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ</a></li><li class="sidebar__second"><a href="../rezhimy-raboty-dvigatelnyj-generatornyj-tormozhenie-dvigatelya-postoyannogo-toka-dpt/">Режимы работы (двигательный, генераторный, торможение) двигателя постоянного тока ДПТ</a></li><li class="sidebar__second"><a href="../dpt-posledovatelnogo-vozbuzhdeniya/">ДПТ последовательного возбуждения</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-gpt-osnovnye-ponyatiya/">Генератор постоянного тока ГПТ: основные понятия.</a></li><li class="sidebar__second"><a href="../generator-postoyannogo-toka-nezavisimogo-vozbuzhdeniya/">Генератор постоянного тока независимого возбуждения</a></li><li class="sidebar__second"><a href="../generator-parallelnogo-vozbuzhdeniya/">Генератор параллельного возбуждения</a></li><li class="sidebar__second"><a href="../sxemy-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-s-rezistorom/">Схемы пуска двигателя постоянного тока независимого возбуждения с резистором</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-eds/">Схема пуска двигателя постоянного тока независимого возбуждения в функции ЭДС</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-toka/">Схема пуска двигателя постоянного тока независимого возбуждения в функции тока</a></li><li class="sidebar__second"><a href="../sxema-puska-dvigatelya-postoyannogo-toka-nezavisimogo-vozbuzhdeniya-v-funkcii-vremeni/">Схема пуска двигателя постоянного тока независимого возбуждения в функции времени</a></li></ul>
+				  </details></details>
+
+	
+	<!-------------------------------------------------------- Решение задач по ТОЭ онлайн ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Решение задач по тоэ онлайн</summary><ul>      <li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskoj-cepi-postoyannogo-toka-metodom-uzlovyx-i-konturnyx-uravnenij-i-metodom-konturnyx-tokov/">Как использовать программу для расчета электрической цепи постоянного тока методом узловых и контурных уравнений, и методом контурных токов</a></li><li class="sidebar__second"><a href="../kak-ispolzovat-programmu-dlya-rascheta-elektricheskix-cepej-onlajn/">Как использовать программу для расчета электрических цепей онлайн</a></li><li class="sidebar__second"><a href="../triangle/">Треугольник сопротивлений в звезду онлайн</a></li></ul></details>
+
+
+<!-------------------------------------------------------- СПТ  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Силовая преобразовательная техника</summary><ul>      <li class="sidebar__second"><a href="../spt/">Силовая преобразовательная техника: основы</a></li><li class="sidebar__second"><a href="../poluprovodnikovie_preobrazovateli/">Полупроводниковые преобразователи</a></li><li class="sidebar__second"><a href="../p-n-perexod/">p-n переход</a></li><li class="sidebar__second"><a href="../vypryamitelnyj-diod/">Выпрямительный диод</a></li></ul></details>
+
+<!-------------------------------------------------------- Радиокомпоненты  ---------------------------------->
+
+
+<details class="sidebar__details"
+	><summary class="sidebar__first">Радиокомпоненты</summary><ul>      <li class="sidebar__second"><a href="../kondensator/">Конденсатор</a></li><li class="sidebar__second"><a href="../kondensatory-postoyannoj-yomkosti/">Конденсаторы постоянной ёмкости</a></li></ul></details>
+    </nav>
+</div>
+ 	 <div class="content-container">
+		<main id="main" class="site-main">
+
+		
+<Article id="post-2215" class="paper__item">
+
+	<header class="header__main">
+		<h1 class="header__title header__title-h1">Регулирование частоты вращения двигателя постоянного тока независимого возбуждения ДПТ НВ</h1>			</header><!-- .entry-header -->
+
+
+
+	<div class="paper__text">
+		<div class="paper__breadcrumbs">
+			<div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/elektricheskie-mashiny/" itemprop="item"><span itemprop="name">Электрические машины</span></a><meta itemprop="position" content="1" /></span><span class="breadcrumbs__separator"> › </span><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumbs__item" href="../category/elektricheskie-mashiny/elektricheskie-mashiny-postoyannogo-toka/" itemprop="item"><span itemprop="name">Электрические машины постоянного тока</span></a><meta itemprop="position" content="2" /></span></div><!-- .breadcrumbs -->		</div>
+		<div class="paper__commers">
+			<a href="https://edugrampromo.com/?rid=f95f92d3f61157d2&amp;promo=1" rel="nofollow">
+				<img class="paper__ads" src="../../www.hoteldelagare-palombebleue.com/appart-hotel-hendaye/author24-min.html" alt="ads"></a>
+		</div>
+
+		<p align="justify">Способы регулирования частоты вращения двигателей оцени­ваются следующими показателями: плавностью регулирования; диапазоном регулирования, определяемым отношением наиболь­шей частоты вращения к наименьшей; экономичностью регулиро­вания, определяемой стоимостью регулирующей аппаратуры и потерями электроэнергии в ней.</p>
+<p align="justify">Из (29.5) следует, что регулировать частоту вращения двига­теля независимого возбуждения можно изменением сопротивле­ния в цепи якоря, изменением основного магнитного потока <i>Ф</i>, изменением напряжения в цепи якоря.<span id="more-2215"></span></p>
+<p style="padding-left: 180px;"><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00251.gif"><img decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image002[5]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0025_thumb1.gif" alt="clip_image002[5]" width="125" height="78" border="0"></a> (29.5)</p>
+<h2 style="text-align: justify;">Регулирование частоты вращения ДПТ НВ введение дополнительного сопротивления в цепь якоря</h2>
+<p align="justify">Дополнительное сопротивление (реостат r<sub>д</sub>) включают в цепь яко­ря аналогично пусковому реостату (ПР). Однако в отличие от по­следнего оно должно быть рассчитано на продолжительное проте­кание тока.</p>
+<p align="justify">При включении сопротивления r<sub>д</sub> в цепь якоря выражение частоты (29.5) принимает вид</p>
+<p style="padding-left: 150px;"><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0052.gif"><img decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image005" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image005_thumb2.gif" alt="clip_image005" width="259" height="66" border="0"></a>, (29.12)</p>
+<p>где <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0072.gif"><img decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image007" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image007_thumb2.gif" alt="clip_image007" width="124" height="42" border="0"></a> — частота вращения в режиме х.х.;</p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0092.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image009" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image009_thumb2.gif" alt="clip_image009" width="207" height="42" border="0"></a> — изменение частоты вращения, вызван­ное падением напряжения в цепи якоря.</p>
+<p>С увеличением r<sub>д</sub> возрастает <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image011.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border-width: 0px;" title="clip_image011" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image011_thumb.gif" alt="clip_image011" width="23" height="19" border="0"></a>, что ведет к уменьшению час­тоты вращения. Зависимость n = f(r<sub>д</sub>) иллюстрируется также и механическими характеристиками двигателя независимого воз­буждения (рис. 29.4, <i>а</i>)<i>: </i>с повышением r<sub>д</sub><i> </i>увеличивается наклон механических характеристик, а частота вращения при заданной нагрузке на валу (M = M<sub>ном</sub> ) уменьшается. Этот способ обеспечи­вает плавное регулирование частоты вращения в широком диапа­зоне (только в сторону уменьшения частоты от номинальной), од­нако он неэкономичен из-за значительных потерь электроэнергии в регулировочном реостате (I<sup>2</sup><sub>a</sub> *r<sub>Д</sub>), которые интенсивно растут с увеличением мощности двигателя.</p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image002.jpg"><img loading="lazy" decoding="async" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border-width: 0px;" title="clip_image002" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image002_thumb.jpg" alt="clip_image002" width="654" height="286" border="0"></a></p>
+<p align="center">Рис. 29.4. Механические характеристики двигателя параллельно­го возбуждения:</p>
+<p align="center"><i>а </i>— при введении в цепь якоря добавочного сопротивления;</p>
+<p align="center"><i>б </i>— при изменении основного магнитного потока;</p>
+<p align="center">в — при изменении напряже­ния в цепи якоря</p>
+<h2>Регулирование частоты вращения ДПТ НВ изменением основного магнитного потока</h2>
+<p style="text-align: justify;">Этот способ регулирования в двигателе независимого возбуждения реализуется посредством реостата r<sub>рег</sub> в цепи обмотки возбуждения<i>. </i>Так, при уменьшении сопротивления реостата возрастает магнитный поток обмотки возбуждения, что сопровождается по­нижением частоты вращения [см. (29.5)]. При увеличении r<sub>рег</sub><i> </i>час­тота вращения растет. Зависимость частоты вращения от тока воз­буждения выражается <i>регулировочной характеристикой </i>двигателя n=f(I<sub>В</sub>) при <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0077.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image007[7]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0077_thumb.gif" alt="clip_image007[7]" width="64" height="19" border="0"></a> и <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0098.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image009[8]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0098_thumb.gif" alt="clip_image009[8]" width="69" height="19" border="0"></a>.</p>
+<p style="text-align: justify;">Из выражения (29.5) следует, что с уменьшением магнитного потока <i>Ф</i> частота вращения n увеличивается по гиперболическому закону (рис. 29.5,а). Но одновременно уменьшение <i>Ф</i> ведет к рос­ту тока якоря Ia = M/(C<sub>м</sub>*Ф). При потоке <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0174.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image017[4]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0174_thumb.gif" alt="clip_image017[4]" width="51" height="17" border="0"></a> ток якоря дости­гает значения <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00223.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[23]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00223_thumb.gif" alt="clip_image002[23]" width="118" height="33" border="0"></a>,<i> </i>т. е. падение напряжения в цепи яко­ря достигает значения, равного половине напряжения, подведенного к якорю <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00225.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[25]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00225_thumb.gif" alt="clip_image002[25]" width="99" height="27" border="0"></a>. В этих условиях частота вращения двигателя достигает максимума n<sub>max</sub>. При дальнейшем уменьшении потока <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image025.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image025" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image025_thumb.gif" alt="clip_image025" width="61" height="21" border="0"></a> частота вращения двигателя начинает убывать, так как из-за интенсивного роста тока I<sub>a</sub> второе слагаемое выражения (29.9) нарастает быстрее первого.</p>
+<p>При небольшом нагрузочном моменте на валу двигателя мак­симальная частота вращения n<sub>max</sub> во много раз превосходит номи­нальную частоту вращения двигателя n<sub>ном</sub> и является недопусти­мой по условиям механической прочности двигателя, т. е. может привести к его «разносу». Учитывая это, при выборе реостата&nbsp; r<sub>рег</sub><i> </i> <i></i>необходимо следить за тем, чтобы при полностью введенном его сопротивлении частота вращения двигателя не превысила допус­тимого значения.</p>
+<p>Например, для двигателей серии 2П допускается превышение частоты вращения над номинальной не более чем в 2—3 раза. Необходимо также следить за надежностью электриче­ских соединений в цепи обмотки возбуждения двигателя, так как при разрыве этой цепи магнитный поток уменьшается до значения потока остаточного магнетизма Ф<sub>ост</sub>, при котором частота враще­ния может достигнуть опасного значения.<br />
+<br />
+Вид регулировочных характеристик n = f(Ф) зависит от значе­ния нагрузочного момента M<sub>2</sub><i> </i>на валу двигателя: с ростом M<sub>2</sub> мак­симальная частота вращения n<sub>max</sub> уменьшается (рис. 29.5, <i>б</i>)<i>.</i><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image038.jpg"><img loading="lazy" decoding="async" class="aligncenter" title="clip_image038" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image038_thumb.jpg" alt="clip_image038" width="388" height="207" border="0"></a></p>
+<p style="text-align: center;">Рис. 29.5. Регулировочные характеристики двигателя независимого возбуждения <i></i></p>
+<p>Недостаток рассмотренного способа регулирования частоты вращения состоит в том, что при изменении магнитного потока <i>Ф</i> меняется угол наклона механической характеристики двигателя.</p>
+<p>Рассмотренный способ регулирования частоты вращения прост и экономичен, так как в двигателях независимого возбуж­дения ток<strong> I<sub>В</sub> = (0,01 &#8212; 0,07)I<sub><span style="font-size: xx-small;"><span style="line-height: 10px;">а</span></span></sub></strong>, а поэтому потери в регулировочном реостате <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00229.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[29]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00229_thumb.gif" alt="clip_image002[29]" width="72" height="39" border="0"></a> невелики.</p>
+<p>Однако диапазон регулирования обычно составляет <strong>n<sub>MAX</sub>/n<sub>MIN</sub>&nbsp;= 2 &#8212; 5</strong>. Объясняется это тем, что нижний предел частоты вращения обусловлен насыщением машины, ограничивающим значение магнитного потока <i>Ф</i>, а верхний предел частоты опасностью «разноса» двигателя и усилением влияния реакции якоря, иска­жающее действие которого при ослаблении основною магнитного потока <i>Ф</i> усиливается и ведет к искрению на коллекторе или же к появлению кругового огня.</p>
+<h2>Регулирование частоты вращения ДПТ НВ изменение напряжения в цепи якоря</h2>
+<p>Регулирование часто­ты вращения двигателя изменением питающего напряжения при­меняется лишь при I<sub>B</sub> = const, т. е. при раздельном питании цепей обмотки якоря и обмотки возбуждения при независимом возбуж­дении.</p>
+<p>Частота вращения в режиме х.х. n<sub>0</sub> пропорциональна напря­жению, а <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0061.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image006" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image006_thumb1.gif" alt="clip_image006" width="23" height="19" border="0"></a> от напряжения не зависит, поэтому ме­ханические характеристики двигателя при изменении напряжения не меняют угла наклона к оси абсцисс, а смещаются по высоте, оставаясь параллельными друг другу (см. рис. 29.4, <i>в</i>). Для осуще­ствления этого способа регулирования необходимо цепь якоря двигателя подключить к источнику питания с регулируемым на­пряжением. Для управления двигателями малой и средней мощно­сти в качестве такого источника можно применить регулируемый выпрямитель, в котором напряжение постоянного тока меняется регулировочным автотрансформатором (АТ), включенным на вхо­де выпрямителя (рис. 29.6,а).</p>
+<p>Для управления двигателями большой мощности целесооб­разно применять генератор постоянного тока независимого возбу­ждения; привод осуществляется посредством приводного двигате­ля (ПД), в качестве которого обычно используют трехфазный двигатель переменного тока. Для питания постоянным током це­пей возбуждения генератора <i>Г </i>и двигателя <i>Д </i>используется возбу­дитель <i>В — </i>генератор постоянного тока, напряжение на выходе которого поддерживается неизменным. Описанная схема управле­ния двигателем постоянного тока (рис. 29.6, <i>б</i>)<i> </i>известна под на­званием системы «генератор — двигатель» <i>(Г—Д)</i>.</p>
+<p><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image010.jpg"><img loading="lazy" decoding="async" style="background-image: none; float: none; padding-top: 0px; padding-left: 0px; margin-left: auto; display: block; padding-right: 0px; margin-right: auto; border: 0px;" title="clip_image010" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image010_thumb.jpg" alt="clip_image010" width="568" height="246" border="0"></a></p>
+<p align="center">Рис. 29.6. Схемы включения двигателей постоянного тока при регули­ровании частоты вращения изменением напряжения в цепи якоря</p>
+<p style="text-align: justify;">Изменение напряжения в цепи якоря позволяет регулировать частоту вращения двигателя вниз от номинальной, так как напря­жение свыше номинального недопустимо. При необходимости регулировать частоту вращения вверх от номинальной можно вос­пользоваться изменением тока возбуждения двигателя.</p>
+<p style="text-align: justify;">Изменение направления вращения (реверс) двигателя, рабо­тающего по системе <i>Г</i>—<i>Д, </i>осуществляется изменением направле­ния тока в цепи возбуждения генератора <i>Г </i>переключателем <i>П, </i>т. е. переменой полярности напряжения на его зажимах. Если двигатель постоянного тока работает в условиях резко переменной на­грузки, то для смягчения колебаний мощности, потребляемой ПД из трехфазной сети, на вал ПД помещают маховик <i>М, </i>который за­пасает энергию в период уменьшения нагрузки на двигатель <i>Д </i>и отдает ее в период интенсивной нагрузки двигателя.</p>
+<p style="text-align: justify;">Регулирование частоты вращения изменением напряжения в цепи якоря обеспечивает плавное экономичное регулирование в широком диапазоне <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0121.gif"><strong style="color: #333333;">n<sub>MAX</sub>/n<sub>MIN</sub>&nbsp;≥ 25&nbsp;</strong></a>. Наибольшая частота вращения здесь ограничивается условиями коммутации, а наименьшая — условиями охлаждения двигателя.</p>
+<p style="text-align: justify;">Еще одним достоинством рассматриваемого способа регули­рования является то, что он допускает безреостатный пуск двига­теля при пониженном напряжении.</p>
+<h2>Импульсное регулирование частоты вращения&nbsp;ДПТ НВ</h2>
+<p style="text-align: justify;">Сущность этого способа регулирования иллюстрируется схемой, изображен­ной на рис. 29.7, <i>а. </i>Цепь обмотки якоря двигателя параллельного (независимого) возбуждения периодически прерывается ключом <i>К. </i>Во время замыкания цепи якоря на время t<i> </i>к обмотке якоря подводится напряжение <strong>U = U<sub>имп</sub></strong>и ток в ней достигает значения <strong>I<sub>amax</sub></strong>. Затем ключом <i>К </i>цепь якоря размыкают и ток в ней убывает, достигая к моменту следующего замыкания цепи значения <strong>I<sub>amin</sub></strong><i> </i>(при размыкании ключа <i>К </i>ток в обмотке якоря замыкается через диод <i>VD</i>). При следующем замыкании ключа <i>К </i>ток достигает зна­чения <strong>I<sub>amax</sub></strong> и т. д. Таким образом, к обмотке якоря подводится не­которое среднее напряжение</p>
+<p style="padding-left: 120px;"><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00235.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[35]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00235_thumb.gif" alt="clip_image002[35]" width="188" height="44" border="0"></a>, (29.13)</p>
+<p>где <i>Т&#8212; </i>отрезок времени между двумя следующими друг за другом импульсами напряжения (рис. 29.7, <i>б</i>); <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00237.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[37]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00237_thumb.gif" alt="clip_image002[37]" width="84" height="27" border="0"></a><i> </i>— коэффициент управления.</p>
+<p>При этом в обмотке якоря проходит ток, среднее значение которого <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00239.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[39]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00239_thumb.gif" alt="clip_image002[39]" width="223" height="40" border="0"></a><i>.</i></p>
+<p>При импульсном регулировании частота вращения двигателя</p>
+<p style="padding-left: 120px;"><a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00243.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[43]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00243_thumb.gif" alt="clip_image002[43]" width="139" height="67" border="0"></a>. (29.14)</p>
+<p>Таким образом, импульсное регулирование частоты вращения аналогично регулированию изменением подводимого к цепи якоря напряжения. С целью уменьшения пульсаций тока в цепи якоря включена катушка индуктивности (дроссель) <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0314.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; margin: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image031[4]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image0314_thumb.gif" alt="clip_image031[4]" width="15" height="17" border="0"></a>, а частота подачи импульсов равна 200—400 Гц.</p>
+<p>На рис. 29.7, <i>в</i> представлена одна из возможных схем им­пульсного регулирования, где в качестве ключа применен управ­ляемый диод — тиристор <i>VS</i><i>. </i>Открывается тиристор подачей крат­ковременного импульса от генератора импульсов (ГИ) на управляющий электрод (УЭ) тиристора. Цепь L<sub>1</sub>C,<i> </i>шунтирующая тиристор, служит для запирания последнего в период между двумя управляющими импульсами. Происходит это следующим образом: при открывании тиристора конденсатор <i>С </i>перезаряжается через контур L<sub>1</sub>C<i> </i>и создает на силовых электродах тиристора напряже­ние, обратное напряжению сети, которое прекращает протекание тока через тиристор. Параметрами цепи L<sub>1</sub>C<i> </i>определяется время (с) открытого состояния тиристора: <a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00245.gif"><img loading="lazy" decoding="async" style="background-image: none; padding-top: 0px; padding-left: 0px; display: inline; padding-right: 0px; border: 0px;" title="clip_image002[45]" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image00245_thumb.gif" alt="clip_image002[45]" width="93" height="37" border="0"></a><i>. </i>Здесь L<sub>1</sub><i>&nbsp;</i>выража­ется в генри (Гн); <i>С </i>— в фарадах (Ф).<a href="https://energoschool.ru/wp-content/uploads/2014/10/clip_image040.jpg"><img loading="lazy" decoding="async" class="aligncenter" title="clip_image040" src="https://energoschool.ru/wp-content/uploads/2014/10/clip_image040_thumb.jpg" alt="clip_image040" width="375" height="236" border="0"></a></p>
+<p>Рис. 29.7. Импульсное регулирование частоты вращения двига­теля постоянного тока</p>
+<p>Значение среднего напряжения U<sub>ср</sub> регулируется изменением частоты следования управляющих импульсов от генератора им­пульсов на тиристор <i>VS</i><i>.</i></p>
+<p>Жесткие механические характеристики и возможность плав­ного регулирования частоты вращения в широком диапазоне оп­ределили области применения двигателей независимого возбуж­дения в станочных приводах, вентиляторах, а также во многих других случаях регулируемого электропривода, где требуется ус­тойчивая работа при колебаниях нагрузки.</p>
+	</div><!-- .entry-content -->
+	</Article>
+
+
+	<footer class="paper__footer entry-footer">
+
+            <div class="paper__link"></div>
+            <div class="paper__link"><span class="icon-price-tag"></span>
+			<a href="../tag/dvigatel-postoyannogo-toka/" rel="tag">Двигатель постоянного тока</a>,<a href="../tag/dpt-nv/" rel="tag">ДПТ НВ</a>,<a href="../tag/mashiny-postoyannogo-toka/" rel="tag">Машины постоянного тока</a>,<a href="../tag/elektricheskie-mashiny/" rel="tag">Электрические машины</a>			</div>
+            <div class="paper__link"><span class="icon-folder-open"></span>
+			<a href="../category/elektricheskie-mashiny/elektricheskie-mashiny-postoyannogo-toka/" rel="category tag">Электрические машины постоянного тока</a>			</div>
+			<div class="paper__link">
+						</div>
+    </footer>
+
+
+<!-- #post-2215 -->
+
+		</main><!-- #main -->
+	<footer>
+    <div class="container">
+        <div class="footer__content">
+                © energoschool.ru 2026 – All Right Reserved
+                <a class="footer__link" href="https://energoschool.ru/sample-page/">О сайте</a>
+        </div>    
+        
+    </div>
+</footer>	</div>
+
+    <div class="promo">
+  </div>
+
+
+</div>
+
+<script type="text/javascript" defer src="https://energoschool.ru/wp-content/themes/electrikam2020/js/script.js" id="electrikam-scripts-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/navigation.js?ver=20151215" id="electrikam2020-navigation-js"></script>
+<script type="text/javascript" src="https://energoschool.ru/wp-content/themes/electrikam2020/js/skip-link-focus-fix.js?ver=20151215" id="electrikam2020-skip-link-focus-fix-js"></script>
