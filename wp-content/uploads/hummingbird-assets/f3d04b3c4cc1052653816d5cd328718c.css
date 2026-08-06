@@ -2295,7 +2295,7 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto Light"), local("Roboto-Light"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotolight.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotolight.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotolight.ttf") format("truetype");
+  src: local("Roboto Light"), local("Roboto-Light"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotolight.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotolight.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotolight.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -2303,7 +2303,7 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotolightitalic.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotolightitalic.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fontsassets/fonts/Robotolightitalic.ttf") format("truetype");
+  src: local("Roboto Light Italic"), local("Roboto-LightItalic"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotolightitalic.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotolightitalic.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fontsassets/fonts/Robotolightitalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
 }
@@ -2311,7 +2311,7 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto"), local("Roboto-Regular"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Roboto.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Roboto.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Roboto.ttf") format("truetype");
+  src: local("Roboto"), local("Roboto-Regular"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Roboto.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Roboto.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Roboto.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -2319,7 +2319,7 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto Italic"), local("Roboto-Italic"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotoitalic.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotoitalic.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/Robotoitalic.ttf") format("truetype");
+  src: local("Roboto Italic"), local("Roboto-Italic"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotoitalic.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotoitalic.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/Robotoitalic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
@@ -2327,7 +2327,7 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobold.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobold.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobold.ttf") format("truetype");
+  src: local("Roboto Bold"), local("Roboto-Bold"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobold.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobold.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -2335,15 +2335,15 @@ header {
 @font-face {
   font-family: 'Roboto';
   font-display: swap;
-  src: local("Roboto Bold Italic"), local("assets/fonts/Roboto-BoldItalic"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.woff2") format("woff2"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.woff") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.ttf") format("truetype");
+  src: local("Roboto Bold Italic"), local("assets/fonts/Roboto-BoldItalic"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.woff2") format("woff2"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.woff") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/Robotobolditalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'icomoon';
-  src: url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/icomoon.eot?yo9rx9");
-  src: url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/icomoon.woff?yo9rx9") format("woff"), url("https://energoschool.ru/wp-content/themes/electrikam2020/assets/fonts/icomoon.svg?yo9rx9#icomoon") format("svg");
+  src: url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/icomoon.eot?yo9rx9");
+  src: url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/icomoon.woff?yo9rx9") format("woff"), url("https://edu.svyatlo.by/wp-content/themes/electrikam2020/assets/fonts/icomoon.svg?yo9rx9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

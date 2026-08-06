@@ -77,7 +77,7 @@ Clean-Param: utm_source&utm_medium&utm_campaign
                             
 Clean-Param: openstat       
 
-Sitemap: https://energoschool.ru/sitemap.xml
+Sitemap: https://edu.svyatlo.by/sitemap.xml
 
-Host: https://energoschool.ru/
+Host: https://edu.svyatlo.by/
 
